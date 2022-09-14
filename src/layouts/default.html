@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graça Interiores</title>
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{root}}assets/img/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{root}}assets/img/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{root}}assets/img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{root}}assets/img/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{root}}assets/img/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{root}}assets/img/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="{{root}}assets/img/favicon/mstile-144x144.png" />
+  <script src="https://apis.google.com/js/api:client.js"></script>
+</head>
+<body class="white default"> 
+  {{> preloader}}
+  <div class="off-canvas-wrapper">
+    {{> login-reveal}}
+    <div class="off-canvas-content navbar-horizontal " data-off-canvas-content>
+      {{> main-nav}}
+    </div>
+    <div class="lateral-nav">
+      {{> menuLateral}}
+    </div>
+    <div class="off-canvas-content main-content" data-off-canvas-content>
+     <a href="whatsapp://send?phone=+351 962 644 551&abid=+351 962 644 551" class="whatsapp-button" > <i class="icon-h-whatsapp"> </i></a>
+      <div class="off-canvas-content sized" id="bodyCanvas" data-off-canvas-content>
+       {{> body}}
+       {{> footer}} 
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="off-canvas position-right" id="offCanvasRequestProject" data-off-canvas data-transition="overlap">
+      {{> request-project}}
+    </div>
+    <div class="off-canvas position-right" id="offCanvasCart" data-off-canvas data-transition="overlap">
+      {{> off-canvas-cart}}
+    </div>
+  </div>
+  <script src="{{root}}assets/js/app.js"></script>
+  
+  <script>
+  var googleUser = {};
+    var startApp = function() {
+      gapi.load('auth2', function(){
+        // Retrieve the singleton for the GoogleAuth library and set up the client.
+        auth2 = gapi.auth2.init({
+          client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+          cookiepolicy: 'single_host_origin',
+          // Request scopes in addition to 'profile' and 'email'
+          //scope: 'additional_scope'
+        });
+        attachSignin(document.getElementById('customBtn'));
+      });
+    };
+  
+    function attachSignin(element) {
+      // console.log(element.id);
+      auth2.attachClickHandler(element, {},
+          function(googleUser) {
+            document.getElementById('name').innerText = "Signed in: " +
+                googleUser.getBasicProfile().getName();
+          }, function(error) {
+            alert(JSON.stringify(error, undefined, 2));
+          });
+    }
+    </script>
+
+    <script>startApp();</script>
+</body>
+</html>

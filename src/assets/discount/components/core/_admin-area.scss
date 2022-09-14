@@ -1,0 +1,139 @@
+section.admin-area{
+  padding:4rem 0;
+  .order-details{
+    .summary-faturacao{
+      margin-left:3.5rem
+    }
+    .delivery-content{
+      margin-left:3.4rem
+    }
+    .pagamento-content{
+      margin-left:2.5rem;
+      margin-top:1.5rem
+    }
+  }
+  .callout{
+    margin:0;
+  }
+  .tabs-content{
+    border:0;
+  }
+  .tabs .tabs-title > a{
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:$white;
+  }
+  table{
+    margin:0;
+  }
+  .tabs-panel {
+    border:1px solid $light-gray;
+    h5{
+      font-weight: 600;
+      margin: .5rem 0;
+      margin-bottom:1rem;
+    }
+    span.badge{
+      font-size: 1rem;
+      &.process{
+        color:white;
+      }
+    }
+    .delived{
+      img{width: 50px;}
+    tr:hover{
+      cursor: pointer;
+    }
+   
+    }
+
+    form.short{
+      h6{font-weight: 600;}
+      p{color:$dark-gray;margin-bottom:2rem;}
+      label{color:$dark-gray;}
+      max-width:40rem;
+      margin:2rem auto;
+      display:block;
+      .float-label {
+        position: relative;
+        padding-top: 13px;
+        input,
+        select,
+        textarea {
+          padding: 0 0.5rem;
+          border: 2px solid lightgrey;
+          outline: none;
+          min-width: 180px;
+          font-size: 16px;
+          transition: all 0.3s ease-out;
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -webkit-appearance: none;
+          border-radius: 0.5rem;
+          &:focus {
+            border-bottom: 2px solid #000;
+          }
+          &::placeholder {
+            color: transparent;
+          }
+          &:required:invalid + label {
+            color: #ff5757;
+          }
+          &:focus:required:invalid {
+            border-bottom: 2px solid #ff5757;
+          }
+          &:focus + label,
+          &:not(:placeholder-shown) + label {
+            font-size: 13px;
+            margin-top: -7px;
+            color: black;
+          }
+        }
+        textarea {
+          max-height: 60px;
+        }
+        label {
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          left: 10px;
+          margin-top: 13px;
+          transition: all 0.3s ease-out;
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+        }
+      }
+    }
+    }
+  }
+  .admin-menu{
+    .cell{
+      background-color:$light-gray;
+      color:$dark-gray;
+      &.active{
+        //background-color:$identity-color;
+        color:$white;
+      }
+      font-weight: 600;
+      //font-size:.65rem;
+      font-size:.9rem;
+      i{
+        font-size:1.5rem;
+        margin-bottom:.5rem;
+      }
+      text-align: center;
+      padding:1.5rem;
+    
+  }
+}
+
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  .admin-menu .cell.active{
+    background-color:themed('primary');
+  }
+}

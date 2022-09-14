@@ -1,0 +1,269 @@
+.icon {
+  display: inline-block;
+  color: #444444;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+.accordion-menu{
+  overflow-y: auto;
+  height: 75vh;
+  padding-right: 2px;
+  -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+      width: 2px;
+      margin-left: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgb(32, 32, 32);
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #3d3d3d;
+      border-radius: 25px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #5c5c5c;
+    }
+}
+.menuLateralSection {
+  position: relative;
+  display: flex;
+  a {
+    color: white;
+  }
+  li {
+    a {
+      color: white;
+    }
+  }
+  .wrapperNav {
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 500ms ease-in-out;
+    .mobile-nav {
+      display: none;
+    }
+    .close-button {
+      display: none;
+    }
+    li {
+      border-bottom: 1px solid white;
+      
+    }
+    .parent-category{
+      margin-bottom: .5rem;
+    }
+    button {
+      color: white;
+    }
+
+    .input-group-field {
+      border-bottom: none;
+    }
+    input.input-group-field {
+      color: white;
+      border-bottom: 1px solid black ;
+    }
+    ul{
+      &.menu-open,
+      &.submenu-open{
+        display: flex!important;
+
+      }
+      &.menu-closed,
+      &.submenu-closed{
+        display: none!important;
+        -moz-transition: display 1s ease;
+  -webkit-transition: display 1s ease;
+  -o-transition: display 1s ease;
+  transition: display 1s ease;
+      }
+     
+    }
+    a {
+      &.menu-category{
+        position: relative;
+        &.actived{
+          font-size: 16px;
+          font-weight: bold;
+          
+        }
+      }
+      &.menu-item{
+        position: relative;
+        margin-left: .6rem;
+        &.actived{
+          font-size: 16px;
+          font-weight: bold;
+        }
+       
+      }
+      &.menu-subitem{
+        position: relative;
+        margin-left: 1.3rem;
+       
+        &.actived{
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+      
+      
+    }
+    a:hover {
+      color: rgb(158, 158, 158);
+    }
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  .wrapperNav {
+    &.open {
+      width: 300px;
+      font-size:14px;
+      .mobile-nav {
+        display: block;
+        padding: 10px;
+        
+        }
+      }
+    }
+    
+    &.closed {
+      width: 0;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapperNav {
+      &.open {
+        width: 100vw!important;
+        .mobile-nav {
+          display: block;
+          
+        }
+      }
+      &.closed {
+        width: 0;
+      }
+    }
+    li {
+      a {
+        i {
+          margin-left: -1.5rem;
+          margin-right: 0.2rem;
+        }
+      }
+    }
+  }
+  
+  input {
+    margin-bottom: 0.5rem;
+    border-bottom:1px solid black;
+    &:focus {
+      padding-right: 1rem;
+    }
+  }
+  
+
+.navbar {
+  background-color: #0a0a0a;
+  margin-top: 5rem;
+}
+.menuLateralMain {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  h1 {
+    text-align: center;
+  }
+}
+.lateral-menu {
+  padding: 0;
+  display: block;
+  color: white !important;
+  i {
+    &:before {
+      font-size: 24px;
+    }
+  }
+  &:hover {
+    color: white !important;
+  }
+}
+@media screen and (min-width: 640px) {
+  .navbar {
+    margin-top: 0 !important;
+  }
+}
+.lateral-nav {
+  position: fixed;
+  height: 102vh;
+  width: 0;
+  margin-top: 5rem;
+  background-color: $black;
+  z-index: 10;
+  .navbar{
+    height: 100vh;
+    width: 0;
+    .mobile-nav{
+      height: 100vh;
+      .input-group-field{
+        margin-right: .9rem;
+      }
+      
+    }
+  }
+}
+body.light-blue,
+body.white {
+  .submenu-toggle::after {
+    border-color: $black transparent transparent;
+    margin: 0!important;
+  }
+  .search {
+    color: rgb(158, 158, 158) !important;
+    margin: 0 !important;
+    
+    i {
+      &:before {
+        font-size: 24px;
+        color: black
+      }
+    }
+  }
+}
+body.blue,
+body.black {
+  .submenu-toggle::after {
+    border-color: white transparent transparent;
+    margin: 0!important;
+  }
+  .search {
+    color: rgb(158, 158, 158) !important;
+    margin: 0 !important;
+    
+    i {
+      &:before {
+        font-size: 24px;
+        color: white
+      }
+    }
+  }
+}
+@media screen and (max-width: 694px) {
+  .lateral-nav {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .lateral-nav {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,68 @@
+<div>
+  <h5 class="title envio-title blocked"> <span class="etapa_two">2</span> Método de envio <span id="edit-envio" class=" invisible">Editar</span></h5> 
+  <div class="delivery-content" style="display:none">
+  <ul class="tabs" data-tabs id="cart-delivery-option">
+    <li class="tabs-title delivery-option is-active">
+      <a data-tabs-target="store" href="#store" aria-selected="true">
+        <div class="grid-x grid-margin-x">
+          <div class="cell shrink">
+            <i class="icon-location"></i>
+          </div>
+          <div class="cell auto">
+            <h6>LEVANTAR A ENCOMENDA</h6>
+            <p>Levantar na loja sem custo</p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="tabs-title delivery-option">
+      <a data-tabs-target="transportation" href="#transportation">
+        <div class="grid-x grid-margin-x">
+          <div class="cell shrink">
+            <i class="icon-delivery"></i>
+          </div>
+          <div class="cell auto">
+            <h6>ENVIO AO DOMICÍLIO</h6>
+            <p>A opção mais cómoda</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <div class="tabs-content" data-tabs-content="cart-delivery-option" >
+    <div class="tabs-panel is-active" id="store">
+      <div class="grid-x grid-margin-x align-middle check-list-item">
+        <div class="cell shrink">
+          <input id="checkbox1" type="checkbox" checked>
+        </div>
+        <div class="cell shrink">
+          <i class="icon-store"></i>
+        </div>
+        <div class="cell auto">
+          <h6>RECOLHA NA LOJA</h6>
+          <p>Entraremos em contacto para efectuar o levantamento</p>
+        </div>
+        <div class="cell shrink">
+          <span>GRATUITO</span>
+        </div>
+      </div>
+    </div>
+    <div class="tabs-panel" id="transportation">
+      {{> cart-delivery-method}}
+    </div>
+    <div class="delivery-notes">
+      <div class="active-notes">
+        <span data-toggle="notas" data-toggler
+        data-animate="fade-in fade-out">Deixar comentário</span>
+      </div>
+      <textarea name="entrega notas" id="notas" cols="30" rows="6"  data-toggler
+      data-animate="fade-in fade-out" placeholder="Deixe aqui os seus comentários relacionados com a sua encomenda ou entrega (opcional)" style="display:none"></textarea>
+    </div>
+    <div class="next-step">
+      <button id="continue-to-payment" >Continuar</button>
+    </div>
+  </div>
+</div>
+</div>
+
+

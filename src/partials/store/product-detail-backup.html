@@ -1,0 +1,33 @@
+<section class="product-detail">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x" id="sticky-section">
+      <div class="cell medium-1 hide-for-small-only" data-sticky-container>
+        <div data-sticky data-sticky-on="medium" data-offset="2" data-margin-top="6" data-top-anchor="sticky-section:top" data-btm-anchor="sticky-section:bottom">
+          <ul class="thumbnails-nav menu vertical" data-magellan data-threshold="200">
+            {{#each store.product-img}}
+            <li>
+              <a href="#{{id}}">
+                <img alt="{{name}}" src="{{link}}">
+              </a>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="cell medium-5 large-6 img-modal-list hide-for-small-only" >
+        <div class="popup-gallery mfp-fade">
+          {{#each store.product-img}}
+          <a href="{{link}}" title="{{name}}" id="{{id}}" data-magellan-target="{{id}}">
+            <img alt="{{name}}" src="{{link}}">
+          </a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="cell medium-6 large-5 " data-sticky-container>
+        <div data-sticky data-sticky-on="medium" data-margin-top="6" data-top-anchor="sticky-section:top" data-btm-anchor="sticky-section:bottom">
+          {{> product-detail-description}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

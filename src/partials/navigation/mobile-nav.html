@@ -1,0 +1,70 @@
+<button class="close-button" aria-label="Close menu" type="button" data-close>
+  <i class="icon-arrow_forward"></i>
+</button>
+<nav class="mobile-nav">
+  
+  <form class="search-form" role="search">
+    <div class="grid-x grid-margin-x">
+      <button aria-label="Pesquisa" class="button clear search" type="button">
+        <i class="icon-search"></i>
+      </button>
+      <input class="input-group-field" type="search" placeholder="Pesquisar" />
+    </div>
+  </form>
+  <ul
+    class="vertical menu accordion-menu"
+    data-accordion-menu
+    data-submenu-toggle="true"
+    data-multi-open="false"
+  >
+
+  <li class="menu-category-list">
+    <a class="menu-category actived " href="lista-produtos.html">Mobiliário</a>
+    <ul class="menu vertical menu-open">
+      <li ><a class="menu-item " href="#">Item 1A</a></li>
+      <li class="menu-submenu-list">
+        <a  class="menu-item actived "href="#">Item 1B</a>
+        <ul class="menu vertical  submenu-open ">
+          <li ><a class="menu-subitem " href="#">Chambres Complètes Jeune | Ados</a></li>
+          <li ><a class="menu-subitem" href="#">Item 1B</a></li>
+          <li><a class="menu-subitem open-all" href="lista-produtos.html">Abrir sub-lista de produto</a></li>
+        </ul>
+      </li>
+      <li ><a class="menu-item open-all" href="lista-produtos.html">Abrir lista de produto</a></li>
+    </ul>
+  </li>
+
+    {{#each navigation.main-w-submenu}}
+
+
+    <li class="menu-category-list">
+      <a class="menu-category " href="{{link}}.html">{{name}}</a>
+      <ul class="menu vertical">
+        <li ><a class="menu-item " href="#">Item 1A</a></li>
+        <li class="menu-submenu-list">
+          <a  class="menu-item  "href="#">Item 1B</a>
+          <ul class="menu vertical ">
+            <li ><a class="menu-subitem " href="#">Chambres Complètes Jeune | Ados</a></li>
+            <li ><a class="menu-subitem" href="#">Item 1B</a></li>
+            <li><a class="menu-subitem open-all" href="{{link}}.html">Abrir sub-lista de produto</a></li>
+          </ul>
+        </li>
+        <li ><a class="menu-item open-all" href="{{link}}.html">Abrir lista de produto</a></li>
+      </ul>
+    </li>
+    {{/each}} {{#each navigation.main-no-submenu}}
+    <li class="no-submenu" >
+     
+      <a href="{{link}}.html">{{name}}</a>
+    </li>
+    {{/each}} {{#each navigation.secondary}}
+    <li class="no-submenu" >
+      
+      <a href="{{link}}.html">
+    
+      {{name}}</a>
+    </li>
+    {{/each}}
+  </ul>
+</nav>
+

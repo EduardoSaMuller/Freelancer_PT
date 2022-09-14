@@ -1,0 +1,126 @@
+dev:
+  -
+    name: Carrinho
+    link: carrinho
+
+  -
+    name: Obrigado
+    link: obrigado
+  -
+    name: Contacto
+    link: contacto
+  -
+    name: Antes e Depois
+    link: antes-depois
+  -
+    name: Home
+    link: home
+  -
+    name: Produtos
+    link: lista-produtos
+  -
+    name: Produto
+    link: produto
+  -
+    name: Projetos
+    link: lista-projetos
+  -
+    name: Projeto
+    link: projeto
+  -
+    name: Serviços
+    link: servicos
+
+  -
+    name: Email
+    link: email
+
+
+main-w-submenu:
+  # -
+  #   name: Mobiliário
+  #   tab-name: mobiliario
+  #   link: lista-produtos
+
+  -
+    name: Sofás
+    tab-name: sofa
+    link: lista-produtos
+  -
+    name: Decoração
+    tab-name: decoracao
+    link: lista-produtos
+  -
+    name: Descanso
+    tab-name: descanso
+    link: lista-produtos
+
+main-no-submenu:
+    -
+      name: Projetos
+      tab-name: projetos
+      link: lista-projetos
+    -
+      name: Antes e Depois
+      tab-name: lista-antes-depois
+      link: lista-antes-depois
+
+secondary:
+  -
+    name: Contacto
+    link: contacto
+    svg: envelope-open
+  -
+    name: Area Cliente
+    link: area-cliente
+    svg: user
+
+social:
+  -
+    svg: instagram
+    link: #
+  -
+    svg: youtube
+    link: #
+  -
+    svg: linkedin
+    link: #
+  -
+    svg: pinterest
+    link: #
+  -
+    svg: facebook
+    link: #
+
+footer-1:
+  -
+    name: Sobre Nós
+    link: sobre
+  -
+    name: Servicos para si
+    link: servicos
+  # -
+  #   name: Métodos de Pagamento
+  #   link: contacto
+  # -
+  #   name: Contactos
+  #   link: contacto
+  -
+    name: Comentários de Clientes
+    link: pagina-dinamica
+  -
+    name: Perguntas Frequentes
+    link: pagina-dinamica
+
+
+footer-2:
+  
+  -
+    name: Testemunhos de Clientes
+    link: pagina-dinamica
+  -
+    name: Junte-se à nossa equipa
+    link: pagina-dinamica
+  -
+    name: Parcerias
+    link: pagina-dinamica

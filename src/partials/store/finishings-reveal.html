@@ -1,0 +1,46 @@
+<div class="reveal" id="finishings-reveal" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up" >
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4>Seleccione o Acabamento</h4>
+  <div class="grid-x grid-margin-x align-center">
+    <div class="text-content cell">
+      <div class="finishing-list">
+        {{#repeat 1}}
+        <h6 class="separator">Acabamento</h6>
+        <div class="cell auto">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="grid-x grid-padding-x grid-padding-y small-up-4 medium-up-6 ">
+          {{#repeat 1}}
+          <div class="cell">
+            <div class="list-tile active" style="background-color:grey;"></div>
+          </div>
+          {{/repeat}}
+          {{#repeat 20}}
+          <div class="cell">
+            <div class="list-tile " style="background-color:grey;"></div>
+          </div>
+          {{/repeat}}
+        </div>
+        {{/repeat}}
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+    <ul class="menu horizontal">
+      <li>
+        <a >
+        <div class="list-tile active" style="background-color:grey;"></div>
+        </a>
+    </li>
+      {{#repeat 20}}
+      <li>
+        <a >
+        <div class="list-tile" style="background-color:grey;"></div>
+        </a>
+    </li>
+    {{/repeat}}
+  </ul>
+-->

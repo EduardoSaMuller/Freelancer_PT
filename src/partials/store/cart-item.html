@@ -1,0 +1,83 @@
+<div class="cart-item-wrp">
+  <!--
+  <div class="cart-item-actions grid-x">
+  <div class="cell small-4">
+  <a class="action">
+  <i class="icon-heart-cart"></i>
+  <span>Salvar</span>
+</a>
+</div>
+<div class="cell small-4">
+<a class="action">
+<i class="icon-trash-cart"></i>
+<span>Eliminar</span>
+</a>
+</div>
+<div class="cell small-4">
+<a class="action">
+<i class="icon-cross-cart"></i>
+<span>Cancelar</span>
+</a>
+</div>
+</div>
+-->
+<div class="cart-item">
+  <div class="grid-x">
+    <div class="cell auto"></div>
+    <a class="cell shrink button close">
+      <i class="icon-close"></i>
+    </a>
+  </div>
+  <div class="grid-x">
+    <div class="cell small-5">
+      <a href="produto.html">
+        <img src="http://via.placeholder.com/500x400">
+      </a>
+    </div>
+    <div class="cell auto info cart-content">
+      <div class="item-info">
+        <a class="name" href="produto.html">{{name}}</a>
+        <a class="category" href="lista-produto.html">{{category}}</a>
+      </div>
+      <div class="item-count-and-price">
+        <div class="item-count">
+          <div class="minus">
+            <a>
+              <i class="icon-remove"></i>
+            </a>
+          </div>
+          <div class="center">
+            <input type="number" min="1" max="" value="1">
+          </div>
+          <div class="plus">
+            <a class="cell control">
+              <i class="icon-add"></i>
+            </a>
+          </div>
+        </div>
+        <div class="item-final-price">
+          <span class="discount">{{discount}}%</span>
+          <span class="old-price">{{old-price}}€</span>
+          <span class="price">{{price}}€</span>
+        </div>
+        
+        
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="grid-x">
+    <div class="cell auto">
+      <!--
+      ao seleccionar:
+      1. adicionar class active <a class="... active"
+      2. alterar texto "remover da lista de desejos"
+     -->
+      <a class="cell shrink button clear">
+        <i class="icon-favorite_border"></i> Adicionar à lista de desejos
+      </a>
+    </div>
+  </div>
+</div>
+</div>

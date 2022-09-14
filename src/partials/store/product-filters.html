@@ -1,0 +1,30 @@
+<ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Preço</a>
+    <div class="accordion-content" data-tab-content>
+      <div class="slider" id="price-range-slider" data-slider data-start="0" data-initial-start="10" data-initial-end="1000" data-end="2000" data-step="1" data-binding="true">
+      <span class="slider-handle start" data-slider-handle role="slider" tabindex="1" aria-controls="priceMin"></span>
+      <span class="slider-fill" data-slider-fill></span>
+      <span class="slider-handle end" data-slider-handle role="slider" tabindex="1" aria-controls="priceMax"></span>
+    </div>
+    <div class="grid-x grid-margin-x">
+      <div class="cell auto">
+        <input type="number" id="priceMin">
+      </div>
+      <div class="cell auto">
+        <input type="number" id="priceMax">
+      </div>
+    </div>
+</div>
+</li>
+<li class="accordion-item" data-accordion-item="">
+  <a href="#" class="accordion-title" aria-controls="x5wegr-accordion" role="tab" id="x5wegr-accordion-label" aria-expanded="false" aria-selected="false">Pesquisa</a>
+  <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="x5wegr-accordion-label" aria-hidden="true" id="x5wegr-accordion" style="display: none;">
+      <div class="cell style-item">
+          <input type="text" name="pesquisa" value="" placeholder="Pesquisar...">
+      </div>
+  </div>
+</li>
+<button class=" float-right button cast rounded small" type="submit">Pesquisar<i class="icon-arrow_forward"></i></button>
+
+</ul>

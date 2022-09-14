@@ -1,0 +1,142 @@
+$themes: (
+'blue': (
+'primary': white,
+),
+'light-blue': (
+'primary': #eb6852,
+),
+);
+
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+
+    .#{$theme} {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+
+  }
+}
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+body{position: inherit!important;}
+body.blue{
+  #offCanvasCart{background:red}
+  .main-nav{
+    color:$black;
+    .cart-counter{
+      background-color:$black;
+      color:$white;
+    }
+    i, button[data-toggle="offCanvasCart"],
+    ul li a,
+    input[type="search"]::placeholder,
+    input[type="search"],
+    .tabs .tabs-title > a[aria-selected='true'],
+    .tabs .tabs-title > a[aria-selected='true'] i{
+      color:$black;
+    }
+    ul li a:hover, .subnav .tabs-content h5 a{
+      color:lighten($black,10%);
+    }
+    &.is-open{
+      color:$black;
+      i, li a, input[type="search"]{
+        color:$black;
+      }
+      .tabs .tabs-title.is-active > a[aria-selected='true']{
+        border-bottom:2px solid $black;
+        i{color:$black;}
+        color:$black;
+      }
+    }
+  }
+  .menuLateralSection{
+    #lateralMenu{
+      background-color: $primary;
+      color: $white;
+      i, button[data-toggle="offCanvasCart"],
+    ul li a,
+    input[type="search"]::placeholder,
+    input[type="search"],
+    .tabs .tabs-title > a[aria-selected='true'],
+    .tabs .tabs-title > a[aria-selected='true'] i{
+      color:$white;
+    }
+    }
+  }
+  footer{
+    a[href^="tel"], a.highlight, .icon-logo  {
+      color: $black;
+    }
+  }
+  .icon-logo-gracehome .path1:before {
+    content: "\e935";
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path2:before {
+    content: "\e93d";
+  
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path3:before {
+    content: "\e93a";
+  
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path4:before {
+    content: "\e93c";
+  
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path5:before {
+    content: "\e939";
+  
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path6:before {
+    content: "\e936";
+  
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path7:before {
+    content: "\e93e";
+    margin-left: -5.97em;
+    color: rgb(254, 69, 18);
+ 
+  }
+  .icon-logo-gracehome .path8:before {
+    content: "\e93b";
+  
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path9:before {
+    content: "\e937";
+  
+    color: $white;
+ 
+  }
+  .icon-logo-gracehome .path10:before {
+    content: "\e938";
+  
+    color: $white;
+ 
+  }
+
+
+}

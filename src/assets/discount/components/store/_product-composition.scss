@@ -1,0 +1,9 @@
+section.product-composition{
+  padding:$section-padding;
+}
+
+@media screen and (min-width: 40em) {
+  table .thumbnail-img img{
+    max-width: 8rem;
+  }
+}

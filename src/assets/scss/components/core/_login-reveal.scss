@@ -1,0 +1,101 @@
+div#loginReveal {
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(14, 14, 14, 0.25);
+  -moz-box-shadow: 0px 1px 0px 0px rgba(14, 14, 14, 0.25);
+  box-shadow: 0px 1px 0px 0px rgba(14, 14, 14, 0.25);
+  top: 0 !important;
+  left: 0;
+  width: 100%;
+  max-width: none;
+
+  .header {
+    border-bottom: 1px solid $medium-gray;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  div.medium-1 {
+    text-align: center;
+
+    i {
+      color: $medium-gray;
+      font-size: 2rem;
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  p {
+    color: $dark-gray;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+
+    &.fade-in-vertical {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      pointer-events: none;
+
+      transition: height .5s, visibility .5s, opacity .5s linear;
+
+    }
+
+    &.fade-out-vertical {
+      visibility: visible;
+      height: 60px;
+      opacity: 1;
+      display: block;
+
+    }
+
+    ;
+
+    li {
+      font-size: 80%;
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .recover-button {
+    width: 100%;
+    display: block;
+    text-align: right;
+    font-size: .65rem;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: .65rem;
+  }
+}
+
+.reveal-overlay.transparent {
+  background: #0000004d;
+}
+
+@media screen and (min-width: 40em) {
+  div#loginReveal {
+    &.reveal.full {
+      height: auto;
+      min-height: auto
+    }
+  }
+}
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  div#loginReveal .header i {
+    color: themed('primary');
+  }
+}

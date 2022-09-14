@@ -1,0 +1,364 @@
+categories:
+  -
+    name: QUARTOS DE CASAL
+  -
+    name: SALAS DE JANTAR
+  -
+    name: SALAS DE ESTAR
+  -
+    name: LOW COST
+  -
+    name: CRIANÇA E JUVENIL
+  -
+    name: LUXURY OUTDOOR
+  -
+    name: ESCRITÓRIOS
+  -
+    name: MOBILIÁRIO RÚSTICO
+  -
+    name: HALL ENTRADA
+
+styles:
+  -
+    name: Rústico
+  -
+    name: Contemporâneo
+  -
+    name: Moderno
+
+recomended:
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price: 2.087,00
+  -
+    name: Sala de estar York II
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York III
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York IV
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price: 2.087,00
+  -
+    name: Sala de estar York II
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York III
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York IV
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+
+products:
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price: 2.087,00
+  -
+    name: Sala de estar York II
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York III
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York IV
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York V
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price: 2.087,00
+  -
+    name: Sala de estar York VI
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York VII
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York VIII
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York IX
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price: 2.087,00
+  -
+    name: Sala de estar York II
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York III
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York IV
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York V
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price: 2.087,00
+  -
+    name: Sala de estar York VI
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York VII
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York VIII
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York IX
+    category: Salas Completas
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+
+cart:
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    price: 3.087,00
+    old-price : 2.087,00
+    amount : 2
+    discount : 50
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    price: 3.087,00
+    old-price : 2.087,00
+    amount : 2
+    discount : 50
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    price: 3.087,00
+    old-price : 2.087,00
+    amount : 2
+    discount : 50
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    price: 3.087,00
+    old-price : 2.087,00
+    amount : 2
+    discount : 50
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    price: 3.087,00
+    old-price : 2.087,00
+    amount : 2
+    discount : 50
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    price: 3.087,00
+    old-price : 2.087,00
+    amount : 2
+    discount : 50
+  -
+    name: Sala de estar York I
+    category: Salas Completas
+    price: 3.087,00
+    old-price : 2.087,00
+    amount : 2
+    discount : 50
+
+product-img:
+  -
+    name: image 1
+    link: http://via.placeholder.com/1280x1920
+    id: img1
+    modal-id: modal-img1
+  -
+    name: image 2
+    link: http://via.placeholder.com/1280x1920
+    id: img2
+    modal-id: modal-img2
+  -
+    name: image 3
+    link: http://via.placeholder.com/1920x1280
+    id: img3
+    modal-id: modal-img3
+  -
+    name: image 4
+    link: http://via.placeholder.com/1920x1280
+    id: img4
+    modal-id: modal-img4
+  -
+    name: image 5
+    link: http://via.placeholder.com/1280x1920
+    id: img5
+    modal-id: modal-img5
+
+acabamentos:
+  -
+    name: Turquoise
+    color: 1abc9c
+  -
+    name: Emerald
+    color: 2ecc71
+  -
+    name: River
+    color: 3498db
+  -
+    name: Amethyst
+    color: 9b59b6
+  -
+    name: Wet Asphalt
+    color: 34495e
+  -
+    name: Green Sea
+    color: 16a085
+  -
+    name: Nephritis
+    color: 27ae60
+  -
+    name: Belize Hole
+    color: 2980b9
+  -
+    name: Wisteria
+    color: 8e44ad
+  -
+    name: Midnight Blue
+    color: 2c3e50
+  -
+    name: Sun Flower
+    color: f1c40f
+  -
+    name: Carrot
+    color: e67e22
+  -
+    name: Alizarim
+    color: e74c3c
+  -
+    name: Clouds
+    color: ecf0f1
+  -
+    name: Concrete
+    color: 95a5a6
+  -
+    name: Orange
+    color: f39c12
+  -
+    name: Pumpkin
+    color: d35400
+  -
+    name: Pome Grenate
+    color: c0392b
+  -
+    name: Silver
+    color: bdc3c7
+  -
+    name: Asbetos
+    color: 7f8c8d
+
+product-composition:
+  -
+    name: Sala de estar York I
+    ref: REF ESTV8861
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price: 2.087,00
+  -
+    name: Sala de estar York II
+    ref: REF ESTV8861
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+  -
+    name: Sala de estar York III
+    ref: REF ESTV8861
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+    old-price : 2.087,00
+
+wishlist:
+  -
+    name: Sala de estar York I
+    ref: REF ESTV8861
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+  -
+    name: Sala de estar York II
+    ref: REF ESTV8861
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00
+  -
+    name: Sala de estar York III
+    ref: REF ESTV8861
+    img-link: http://via.placeholder.com/500x350
+    price: 3.087,00

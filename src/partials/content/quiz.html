@@ -1,0 +1,94 @@
+<section class="quiz">
+  <div class="grid-container">
+    <div class="grid-x align-center">
+      <div class="cell small-12 section-header text-center">
+        <h6>A SUA OPINIÃO É MUITO IMPORTANTE. AJUDE-NOS A MELHORAR!</h6>
+        <h3><span>Inquérito de Satisfação</span></h3>
+      </div>
+      <div class="cell small-12 medium-8">
+        <form>
+          <h5>1. Como chegou até nós?</h5>
+          <fieldset >
+            <input id="formCheckbox1" type="checkbox"><label for="formCheckbox1">Recomendação de um amigo</label>
+            <input id="formCheckbox2" type="checkbox"><label for="formCheckbox2">Facebook</label>
+            <input id="formCheckbox3" type="checkbox"><label for="formCheckbox3">Google</label>
+            <input id="formCheckbox4" type="checkbox"><label for="formCheckbox4">Outra</label>
+          </fieldset>
+          <h5>2. Qual a sua satisfação com o Atendimento?</h5>
+          {{> rating}}
+          <textarea rows="1" placeholder="Justifique (Opcional)"></textarea>
+          <h5>3. Qual a sua satisfação com o Apoio ao Cliente?</h5>
+          {{> rating}}
+          <textarea rows="1" placeholder="Justifique (Opcional)"></textarea>
+          <h5>4. Qual a sua satisfação com o Serviço de Entregas?</h5>
+          {{>rating}}
+          <textarea rows="1" placeholder="Justifique (Opcional)"></textarea>
+          <h5>5. Qual a sua satisfação com a qualidade/preço dos nossos produtos?</h5>
+          {{> rating}}
+          <textarea rows="1" placeholder="Justifique (Opcional)"></textarea>
+          <h5>6. Ordene os factores abaixo por grau de influência na sua escolha.</h5>
+          <div class="grid-y grid-padding-y order-list">
+            <div class="grid-x grid-padding-x ">
+              <div class="shrink cell">
+                <input type="number">
+              </div>
+              <div class="auto cell">
+                <label class="middle">Qualidade do Artigo</label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x ">
+              <div class="shrink cell">
+                <input type="number">
+              </div>
+              <div class="auto cell">
+                <label class="middle">Qualidade do Serviço Prestado</label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x ">
+              <div class="shrink cell">
+                <input type="number">
+              </div>
+              <div class="auto cell">
+                <label class="middle">Preço</label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x ">
+              <div class="shrink cell">
+                <input type="number">
+              </div>
+              <div class="auto cell">
+                <label class="middle">Prazo de Entrega</label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x ">
+              <div class="shrink cell">
+                <input type="number">
+              </div>
+              <div class="auto cell">
+                <label class="middle">Pós-Venda (Capacidade de resolução de problemas)</label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x ">
+              <div class="shrink cell">
+                <input type="number">
+              </div>
+              <div class="auto cell">
+                <label class="middle">Outras</label>
+              </div>
+            </div>
+            <h5>7. Recomendaria a Graça Interiores a outras pessoas?</h5>
+            <ul class="menu horizontal" data-recomend-faces>
+              <li><a class="is-selected"><i class="icon-smile"></i></a></li>
+              <li><a><i class="icon-sad"></i></a></li>
+            </ul>
+          </div>
+          <div class="grid-x grid-margin-x align-center">
+            <div class="cell shrink">
+              <a class="button secondary rounded small cast">Enviar<i class="icon-arrow_forward"></i></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

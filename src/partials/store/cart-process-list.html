@@ -1,0 +1,18 @@
+{{> cart-back-small}}
+<div class="cart-process-list">
+  <h4 class="text-center medium-text-left">Resumo da encomenda</h4>
+  <hr class="">
+  <div class="resume-action">
+  <span class="resume-info open"></span>
+  <i class="icon-arrow_downward open-resume"></i>
+  
+  </div>
+  <div class="cart-content cart-checkout invisible">
+  
+  {{#each store.cart}}
+    {{> cart-item}}
+  {{/each}}
+  
+</div>
+{{> cart-process-total}}
+</div>

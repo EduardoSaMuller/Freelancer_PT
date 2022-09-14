@@ -1,0 +1,45 @@
+<section class="product-composition">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x text-center">
+      <div class="cell section-header">
+        <h6>SELECIONE UM OU MAIS PRODUTOS DESTA COMPOSIÇÃO</h6>
+        <h3><span>Composição</span></h3>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+    <table class="unstriped stack">
+      <thead>
+        <tr class="text-center medium-text-left">
+          <th></th>
+          <th>Produto</th>
+          <th>Preço	</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each store.product-composition}}
+        <tr class="text-center medium-text-left">
+          <td>
+            <a class="thumbnail-img" href="produto.html">
+              <img alt="{{name}}" src="{{img-link}}">
+            </a>
+          </td>
+          <td>
+            <h6><a href="produto.html">{{name}}</a></h6>
+            <p><a href="produto.html">{{ref}}</a></p>
+          </td>
+          <td>
+            <span class="price">{{price}}</span>
+            <small class="old-price">{{old-price}}</small>
+          </td>
+          <td class="add-cart">
+            <a href="carrinho.html" class="hollow cast button rounded small">Adicionar ao Carrinho<i class="icon-arrow_forward"></i></a>
+            <span class="product-quantity-min">Quantidade minima 2 unidades</span>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

@@ -1,0 +1,905 @@
+$themes: (
+  "blue": (
+    "primary": #1f1a3c,
+  ),
+  "light-blue": (
+    "primary": #009ee2,
+  ),
+  "black": (
+    "primary": #0a0a0a,
+  ),
+  "white": (
+    "primary": #0a0a0a,
+  ),
+);
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+    .#{$theme} {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+body.light-blue {
+  
+  .main-nav {
+    color: $black;
+    .logo {
+      i.icon-logo-sonno {
+        .path1,
+        .path2,
+        .path3,
+        .path4,
+        .path5,
+        .path7,
+        .path8 {
+          &::before {
+            color: #1f1a3c;
+          }
+        }
+        .path6 {
+          &::before {
+            color: $white;
+          }
+        }
+      }
+    }
+    .cart-counter {
+      background-color: $black;
+      color: $white;
+    }
+    i,
+    button[data-toggle="offCanvasCart"],
+    ul li a,
+    input[type="search"]::placeholder,
+    input[type="search"],
+    .tabs .tabs-title > a[aria-selected="true"],
+    .tabs .tabs-title > a,
+    .tabs .tabs-title > a[aria-selected="true"] i {
+      color: $black;
+
+    }
+    select{
+      border-radius: .5rem;
+    }
+    input[type="search"]{border-bottom: 1px solid $black;    height: 30px;
+      margin-top: 3px;}
+    ul li a:hover,
+    .subnav .tabs-content h5 a {
+      color: lighten($black, 10%);
+    }
+    &.is-open {
+      color: $black;
+      i,
+      li a,
+      input[type="search"] {
+        color: $black;
+      }
+      .tabs .tabs-title.is-active > a[aria-selected="true"] {
+        border-bottom: 2px solid $black;
+        i {
+          color: $black;
+        }
+        color: $black;
+      }
+    }
+  }
+  .discount,
+  .new_collection,
+  .stock {
+    color: $black;
+  }
+  section.product-list .tabs-title.is-active > a {
+    color: $black;
+  }
+  section.product-list .tabs-title > a {
+    color: $black;
+    border: 1px solid $black;
+  }
+  .button.cast:not(.hollow) i,
+  .button.cast:not(.hollow) {
+    color: $black;
+  }
+  .off-canvas-wrapper {
+    .off-canvas.position-left.is-transition-overlap {
+      background-color: #009ee2 !important;
+      button {
+        color: $black;
+      }
+      nav {
+        i,
+        button[data-toggle="offCanvasCart"],
+        ul li a,
+        input[type="search"]::placeholder,
+        input[type="search"],
+        .tabs .tabs-title > a[aria-selected="true"],
+        .tabs .tabs-title > a,
+        .tabs .tabs-title > a[aria-selected="true"] i {
+          color: $black !important;
+        }
+        ul li a:hover,
+        .subnav .tabs-content h5 a {
+          color: lighten($black, 10%) !important;
+        }
+        &.is-open {
+          color: $black !important;
+          i,
+          li a,
+          input[type="search"] {
+            color: $black !important;
+          }
+          .tabs .tabs-title.is-active > a[aria-selected="true"] {
+            border-bottom: 2px solid $black !important;
+            i {
+              color: $black !important;
+            }
+            color: $black !important;
+          }
+        }
+      }
+    }
+  }
+  .lateral-nav {
+    background-color: #009ee2;
+
+    .menuLateralSection,
+    nav,
+    ul {
+      background-color: #009ee2;
+    }
+    button {
+      i::before {
+        color: black !important;
+      }
+    }
+    ul li a,
+    input[type="search"]::placeholder,
+    input[type="search"]:focus,
+    input[type="search"],
+    .tabs .tabs-title > a[aria-selected="true"],
+    .tabs .tabs-title > a,
+    .tabs .tabs-title > a[aria-selected="true"] i {
+      color: $black;
+    }
+    input[type="search"]:focus {
+      border-bottom: 1px solid $black !important;
+    }
+    li {
+      border-bottom: 1px solid $black !important;
+    }
+    ul li button span {
+      &::after {
+        border-color: $black transparent transparent !important;
+      }
+    }
+    ul li a:hover,
+    .subnav .tabs-content h5 a {
+      color: lighten($black, 10%);
+    }
+  }
+  #account-tabs{  
+    li.tabs-title{
+      a{
+        border-color: #009ee2;
+        color: #009ee2;
+        background-color:$white ;
+        padding:.75rem 1.25rem!important
+        
+      }
+      &.is-active{
+        a{
+          color: $white;
+          background-color: #009ee2;
+        }
+      }
+    }
+  }
+  footer {
+    a[href^="tel"],
+    a.highlight,
+    .icon-logo-graca,
+    .icon-logo-minna {
+      color: $black;
+    }
+  }
+  #offCanvasMobileNav{
+    input[type="search"]{border-bottom: 1px solid $black!important;    height: 30px;
+      margin-top: 3px;margin-right: 2rem;}
+  }
+  #offCanvasCart.off-canvas.position-right {
+    background-color: #009ee2;
+    h6,
+    a {
+      color: white;
+    }
+    a,
+    button {
+      i {
+        color: white;
+      }
+    }
+    .cart-total {
+      background-color: #009ee2;
+      .savings-label,
+      .savings {
+        color: #1f1a3c;
+      }
+      .savings-wrp {
+        background-color: #009ee2;
+      }
+      .total-wrp {
+        a {
+          background-color: #1f1a3c !important;
+          border: 2px solid #009ee2;
+          font-size: 1rem;
+          &:hover {
+            background-color: lighten(#1f1a3c, 10%) !important;
+            border: 2px solid #009ee2 !important;
+          }
+          i {
+            font-size: 1.5rem !important;
+            top: -0.5px !important;
+          }
+        }
+      }
+    }
+    .cart-item {
+      background-color: #1f1a3c;
+      .item-count {
+        .minus,
+        .center,
+        .plus {
+          background-color: transparent !important;
+          border: 1px solid #009ee2;
+        }
+        .minus,
+        .plus {
+          &:hover {
+            background-color: lighten(#1f1a3c, 10%) !important;
+          }
+        }
+        .center {
+          input {
+            background: transparent !important;
+          }
+        }
+      }
+      .category {
+        margin-left: 2px;
+      }
+    }
+  }
+  #login-form {
+    button {
+      background: #009ee2;
+    }
+  }
+  button.button{
+    border-radius: .5rem!important;
+  }
+}
+html,body,li,a{
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw !important;
+  .whatsapp-button{
+    position: fixed ; 
+    right: 20px; 
+    top:90%; 
+    z-index: 100000;
+    transition: all;
+
+    &:hover{
+      transform: scale(1.2) ;
+      transition: all .5s;
+    }
+    i{
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: white;
+      background-color: #94d08c;
+      padding: .75rem;
+      border-radius: 50%;
+    }
+  }
+  #lateralMenu{
+    margin-top: -15px;
+  }
+  
+}
+body,div,form,ul{
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(32, 32, 32);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #3d3d3d;
+    border-radius: 25px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5c;
+  }
+}
+body.blue {
+  .main-nav {
+    color: $white;
+    .logo {
+      i.icon-logo-sonno {
+        .path1,
+        .path2,
+        .path3,
+        .path4,
+        .path5,
+        .path7,
+        .path8 {
+          &::before {
+            color: $white;
+          }
+        }
+      }
+    }
+    .cart-counter {
+      background-color: $white;
+      color: $black;
+    }
+    input[type="search"]{border-bottom: 1px solid $white;    height: 30px;
+      margin-top: 3px;}
+    i,
+    button[data-toggle="offCanvasCart"],
+    ul li a,
+    input[type="search"]::placeholder,
+    input[type="search"],
+    .tabs .tabs-title > a[aria-selected="true"],
+    .tabs .tabs-title > a,
+    .tabs .tabs-title > a[aria-selected="true"] i {
+      color: $white;
+    }
+    select{
+      border-radius: .5rem;
+    }
+    ul li a:hover,
+    .subnav .tabs-content h5 a {
+      color: lighten($white, 10%);
+    }
+    &.is-open {
+      color: $white;
+      i,
+      li a,
+      input[type="search"] {
+        color: $white;
+      }
+      .tabs .tabs-title.is-active > a[aria-selected="true"] {
+        border-bottom: 2px solid $white;
+        i {
+          color: $white;
+        }
+        color: $white;
+      }
+    }
+  }
+  .discount,
+  .new_collection,
+  .stock {
+    color: $white;
+  }
+  section.product-list .tabs-title.is-active > a {
+    color: $white;
+  }
+  section.product-list .tabs-title > a {
+    color: #1f1a3c;
+    border: 1px solid #1f1a3c;
+  }
+  .button.cast:not(.hollow) i,
+  .button.cast:not(.hollow) {
+    color: $white;
+  }
+  .lateral-nav {
+    background-color: #1f1a3c;
+    .menuLateralSection,
+    ul,
+    nav,
+    #lateralMenu {
+      background-color: #1f1a3c;
+    }
+  }
+  .off-canvas-wrapper {
+    .off-canvas.position-left.is-transition-overlap {
+      background-color: #1f1a3c !important;
+      button {
+        color: $white;
+      }
+      nav {
+        i,
+        button[data-toggle="offCanvasCart"],
+        ul li a,
+        input[type="search"]::placeholder,
+        input[type="search"],
+        .tabs .tabs-title > a[aria-selected="true"],
+        .tabs .tabs-title > a,
+        .tabs .tabs-title > a[aria-selected="true"] i {
+          color: $white !important;
+        }
+        li {
+          border-top: 1px solid $white;
+        }
+        ul li a:hover,
+        .subnav .tabs-content h5 a {
+          color: lighten($white, 10%) !important;
+        }
+        &.is-open {
+          color: $white !important;
+          i,
+          li a,
+          input[type="search"] {
+            color: $white !important;
+          }
+          .tabs .tabs-title.is-active > a[aria-selected="true"] {
+            border-bottom: 2px solid $white !important;
+            i {
+              color: $white !important;
+            }
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
+  #offCanvasMobileNav{
+    input[type="search"]{border-bottom: 1px solid $white!important;    height: 30px;
+      margin-top: 3px;margin-right: 2rem;}
+  }
+  
+  #offCanvasCart.off-canvas.position-right {
+    background-color: #1f1a3c;
+    h6 {
+      color: #1f1a3c;
+    }
+    a,i{
+      color: $white;
+    }
+    button {
+      i {
+        color: $white;
+      }
+    }
+    .cart-total {
+      background-color: #1f1a3c;
+      .savings-label,
+      .savings {
+        color: #009ee2;
+      }
+      .savings-wrp {
+        background-color: #1f1a3c;
+      }
+      .total-wrp {
+        a {
+          background-color: #009ee2 !important;
+          border: 2px solid #1f1a3c;
+          font-size: 1rem;
+          &:hover {
+            background-color: darken(#009ee2, 10%) !important;
+            border: 2px solid #1f1a3c !important;
+          }
+          i {
+            font-size: 1.5rem !important;
+            top: -0.5px !important;
+          }
+        }
+      }
+    }
+    .cart-item {
+      background-color: $white ;
+      
+      .item-info{
+        a{
+          color: #1f1a3c;
+        }
+      }
+      .price{
+        color: #1f1a3c;
+      }
+      .cell.shrink.button.clear{
+        color: #1f1a3c
+      }
+      .icon-favorite_border{
+        color: #1f1a3c
+      }
+      .item-count {
+        .minus,
+        .center,
+        .plus {
+          background-color: transparent !important;
+          border: 1px solid #1f1a3c;
+          color: #1f1a3c
+        }
+        .minus,
+        .plus {
+          i{
+            color: #1f1a3c
+          }
+          &:hover {
+            background-color: darken(#009ee2, 10%) !important;
+          }
+        }
+        .center {
+          input {
+            background: transparent !important;
+            color: #1f1a3c;
+          }
+        }
+      }
+      .category {
+        margin-left: 2px;
+      }
+    }
+  }
+  button.button{
+    border-radius: .5rem!important;
+  }
+  #account-tabs{  
+    li.tabs-title{
+      a{
+        border-color: #1f1a3c;
+        color: #1f1a3c;
+        background-color:$white ;
+        padding:.75rem 1.25rem!important
+      }
+      &.is-active{
+        a{
+          color: $white;
+          background-color: #1f1a3c;
+        }  
+      }
+    }
+  }
+  footer {
+    a[href^="tel"],
+    a.highlight,
+    .icon-logo-graca,
+    .icon-logo-minna {
+      color: $black;
+    }
+  }
+  #login-form {
+    button {
+      background: #1f1a3c;
+    }
+  }
+}
+body.black {
+  
+  .main-nav {
+    color: $white;
+    .logo {
+      i.icon-logo-sonno {
+        .path1,
+        .path2,
+        .path3,
+        .path4,
+        .path5,
+        .path7,
+        .path8 {
+          &::before {
+            color: $white;
+          }
+        }
+        .path6 {
+          &::before {
+            color: #009ee2;
+          }
+        }
+      }
+      i.icon-logo-gracehome {
+        .path1,
+        .path2,
+        .path3,
+        .path4,
+        .path5,
+        .path6,
+        .path8,
+        .path9,
+        .path10 {
+          &::before {
+            color: $white;
+          }
+        }
+      }
+    }
+    
+    .cart-counter {
+      background-color: $white;
+      color: $white;
+    }
+    i,
+    button[data-toggle="offCanvasCart"],
+    ul li a,
+    input[type="search"]::placeholder,
+    input[type="search"],
+    .tabs .tabs-title > a[aria-selected="true"],
+    .tabs .tabs-title > a[aria-selected="true"] i {
+      color: $white;
+    }
+    
+    
+    ul li a:hover,
+    .subnav .tabs-content h5 a {
+      color: lighten($white, 10%);
+    }
+    &.is-open {
+      color: $white;
+      i,
+      li a,
+      input[type="search"] {
+        color: $white;
+      }
+      .tabs .tabs-title.is-active > a[aria-selected="true"] {
+        border-bottom: 2px solid $white;
+        i {
+          color: $white;
+        }
+        color: $white;
+      }
+    }
+  }
+  .lateral-nav{
+    #lateralMenu {
+      background-color: #0a0a0a;
+    }
+    nav{
+      ul{
+        
+      
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(68, 68, 68);
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #fdfdfd;
+        border-radius: 25px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #5c5c5c;
+      }
+    }
+  }
+    
+  }
+  input[type="search"] {
+    border-bottom: 1px solid $white!important;
+  }
+  #offCanvasCart.off-canvas.position-right .cart-total a.button {
+    background-color: #0a0a0a;
+  }
+  .discount,
+  .new_collection,
+  .stock {
+    color: $white;
+  }
+  section.product-list .tabs-title.is-active > a {
+    color: $white;
+  }
+  section.product-list .tabs-title > a {
+    color: $black;
+    border: 1px solid $black;
+  }
+  .button.cast:not(.hollow) i,
+  .button.cast:not(.hollow) {
+    color: $white;
+  }
+  #account-tabs{  
+    li.tabs-title{
+      a{
+        background-color:$black ;
+        color: $black;
+        background-color:$white ;
+        padding:.75rem 1.25rem!important
+      }
+      &.is-active{
+        a{
+          color: $white;
+          background-color: $black;
+        } 
+      }
+    }
+  }
+  footer {
+    a[href^="tel"],
+    a.highlight,
+    .icon-logo-graca,
+    .icon-logo-minna {
+      color: $black;
+    }
+  }
+  select{
+    border-radius: .5rem;
+  }
+  button.button{
+    border-radius: .5rem!important;
+  }
+}
+body.white {
+  .main-nav {
+    background-color: $white;
+    color: $black;
+    .cart-counter {
+      background-color: $black;
+      color: $white !important;
+    }
+    input[type="search"]{border-bottom: 1px solid $black;    height: 30px;
+      margin-top: 3px;}
+    i,
+    button[data-toggle="offCanvasCart"],
+    ul li a,
+    input[type="search"]::placeholder,
+    input[type="search"],
+    .tabs .tabs-title > a[aria-selected="true"],
+    .tabs .tabs-title > a,
+    .tabs .tabs-title > a[aria-selected="true"] i {
+      color: $black;
+    }
+    input[type="search"]{border-bottom: 1px solid $black;    height: 30px;
+      margin-top: 3px;}
+    ul li a:hover,
+    .subnav .tabs-content h5 a {
+      color: lighten($black, 10%);
+    }
+    &.is-open {
+      background-color: $white;
+      color: $black;
+      i,
+      li a,
+      input[type="search"] {
+        color: $black;
+      }
+      .tabs .tabs-title.is-active > a[aria-selected="true"] {
+        border-bottom: 2px solid $black;
+        i {
+          color: $black;
+        }
+        color: $black;
+      }
+    }
+  }
+  section.product-list .tabs-title.is-active > a {
+    color: $white;
+  }
+  section.product-list .tabs-title > a {
+    color: $black;
+    border: 1px solid $black;
+  }
+  .button.cast:not(.hollow) i,
+  .button.cast:not(.hollow) {
+    color: $white;
+  }
+  select{
+    border-radius: .5rem;
+  }
+  input[type="search"] {
+    border-bottom: 1px solid $black!important;
+  }
+  #offCanvasMobileNav{
+    input[type="search"]{border-bottom: 1px solid $black!important;    height: 30px;
+      margin-top: 3px;margin-right: 2rem;}
+  }
+
+  .lateral-nav {
+    background-color: $white;
+    -webkit-box-shadow: inset -7px -1px 5px -9px lighten($black, 20%);
+    box-shadow: inset -7px -1px 5px -9px lighten($black, 20%);
+    .menuLateralSection,
+    nav {
+      -webkit-box-shadow: inset -7px -1px 5px -9px lighten($black, 20%);
+      box-shadow: inset -7px -1px 5px -9px lighten($black, 20%);
+    }
+    
+    .menuLateralSection,
+    ul,
+    nav {
+      background-color: $white;
+      button {
+        i::before {
+          color: black !important;
+        }
+      }
+      ul li a,
+      input[type="search"]::placeholder,
+      input[type="search"],
+      .tabs .tabs-title > a[aria-selected="true"],
+      .tabs .tabs-title > a,
+      .tabs .tabs-title > a[aria-selected="true"] i {
+        color: $black;
+      }
+      li,
+      input[type="search"]:focus {
+        border-bottom: 1px solid $black !important;
+      }
+      ul li a:hover,
+      .subnav .tabs-content h5 a {
+        color: lighten($black, 10%);
+      }
+    }
+  }
+  .off-canvas-wrapper {
+    .off-canvas.position-left.is-transition-overlap {
+      background-color: $white !important;
+      button {
+        color: $black;
+      }
+      nav {
+        i,
+        button[data-toggle="offCanvasCart"],
+        ul li a,
+        input[type="search"]::placeholder,
+        input[type="search"],
+        .tabs .tabs-title > a[aria-selected="true"],
+        .tabs .tabs-title > a,
+        .tabs .tabs-title > a[aria-selected="true"] i {
+          color: $black !important;
+        }
+        ul li a:hover,
+        .subnav .tabs-content h5 a {
+          color: lighten($black, 10%) !important;
+        }
+        &.is-open {
+          color: $black !important;
+          i,
+          li a,
+          input[type="search"] {
+            color: $black !important;
+          }
+          .tabs .tabs-title.is-active > a[aria-selected="true"] {
+            border-bottom: 2px solid $black !important;
+            i {
+              color: $black !important;
+            }
+            color: $black !important;
+          }
+        }
+      }
+    }
+  }
+  #account-tabs{  
+    li.tabs-title{
+      a{
+        border-color:black ;
+        color: $white;
+        background-color:$black ;
+        padding:.75rem 1.25rem
+      }
+      &.is-active{
+        a{
+          color: $black;
+          background-color: $white;
+        }
+      }
+    }
+  }
+  footer {
+    a[href^="tel"],
+    a.highlight,
+    .icon-logo-graca,
+    .icon-logo-minna {
+      color: $black;
+    }
+  }
+  button.button{
+    border-radius: .5rem!important;
+  }
+}

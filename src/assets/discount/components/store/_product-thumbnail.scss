@@ -1,0 +1,55 @@
+.product-thumbnail{
+  .thumbnail-img{
+    width:100%;
+    display:block;
+    text-align: center;
+    position:relative;
+  }
+  .discount{
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    font-size: 1rem;
+    z-index: 1;
+    text-align: right;
+  }
+  .stock{
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    font-size: 1rem;
+    z-index: 1;
+    text-align: left;
+  }
+  img, .grid-x{
+    margin-bottom:1rem;
+  }
+
+  a.name{
+    font-weight: 600;
+  }
+  a.category{
+    font-size: .75rem;
+    color:$dark-gray;
+    &:hover{
+      //color:$identity-color;
+    }
+  }
+  span.price, span.old-price{
+    font-size:70%;
+  }
+  span.old-price{
+    color:$dark-gray;
+    font-style: normal;
+  }
+}
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+.product-thumbnail{
+  a.category:hover{
+      color:themed('primary');
+    }
+  }
+}

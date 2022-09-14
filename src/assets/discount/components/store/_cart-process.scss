@@ -1,0 +1,151 @@
+section.cart{
+  padding-bottom:2rem;
+  .cart-back{
+    a[href^="tel"]{
+      font-weight: 600;
+      i{
+        //font-size:1.25rem;
+        margin-right:.25rem;
+      }
+    }
+  }
+  h5.title{
+    font-weight: bold;
+    margin:1.5rem 0 .5rem .5rem;
+    font-size:1rem;
+  }
+  h6{
+    font-weight: bold;
+    margin:1rem 0 .5rem 0;
+  }
+  .tabs-title h6{
+    margin:0;
+  }
+  .check-list-item{
+    border:1px solid $light-gray;
+    border-radius: $theme-radius;
+    margin:.25rem;
+    padding:1rem;
+    h6{
+      margin:0;
+      font-size:.85rem;
+    }
+    p{
+      margin:0;
+      font-size:.75rem;
+      color:$dark-gray;
+    }
+    i{
+      font-size:3em;
+    }
+    span{
+      font-weight: bold;
+      font-size:.85rem;
+    }
+    [type='checkbox']{
+      margin:0;
+    }
+    img{
+      height:60px;
+    }
+  }
+  .terms-invoice{
+    padding:2rem;
+    label{
+      color:$dark-gray;
+    }
+    a{
+      font-weight: bold;
+      color:$dark-gray;
+      &:hover{
+        //color:$identity-color;
+      }
+    }
+  }
+  #cart-delivery-confirmation{
+    h6{
+      line-height: 2rem;
+    }
+    
+  }
+  .cart-process-list{
+    background-color:lighten($light-gray, 5%);
+    padding:1.5rem;
+    h4{
+      text-transform: uppercase;
+      font-weight:bold;
+      font-size:1.25rem;
+    }
+  }
+  .cart-process-total{
+    ul.accordion{
+      margin-bottom:0;
+    }
+    .grid-x{
+      padding: 1.25rem 0.75rem .9rem 1rem;
+      border-bottom:1px solid $light-gray;
+      h5{
+        margin:0;
+        font-size: 0.75rem;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      span{
+        font-weight: bold;
+        font-size: .85rem;
+        &.price-delivery{
+          font-size:.65rem;
+        }
+        &.price-total{
+          font-size:1.25rem;
+          margin-top: -.45rem;
+        }
+      }
+    }
+  }
+  .cart-item{
+    background-color:transparent;
+    h5{
+      color:$primary-color;
+      font-size:1.25rem;
+    }
+    a{
+      font-size:.8rem;
+    }
+    .item-count{
+      display: flex;
+      margin-top:.5rem;
+    }
+    span.price{
+      font-size:1rem;
+      color:$primary-color;
+      font-weight: bold;
+    }
+    .info a.name{
+      color:$primary-color;
+      font-size: 120%;
+    }
+    .info a.category{
+      margin-bottom:1rem;
+      font-size:80%;
+    }
+    .info span.old-price{
+      font-size: 80%;
+    }
+  }
+  .cart-item-actions .action:hover *{
+    color:$primary-color;
+  }
+
+  
+}
+
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  section.cart .terms-invoice a:hover{
+    color:themed('primary');
+  }
+}

@@ -1,0 +1,76 @@
+@import "themes-config.scss";
+footer {
+  padding: 4rem 0 1rem 0;
+  .icon-logo-graca,
+  .icon-logo-minna,
+  .icon-logo-gracehome,
+  .icon-logo-sonno {
+    font-size: 3em;
+  }
+  ul.menu a {
+    padding: 0.7rem 0;
+    font-size: 1em;
+    line-height: 0.1.4em;
+  }
+  h6 {
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.1rem;
+  }
+  p {
+    font-size: 0.1em;
+    line-height: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  a.highlight {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  a[href^="tel"] {
+    font-weight: 700;
+  }
+  .footer-floor {
+    padding: $section-padding;
+    font-size: 1rem;
+    a {
+      color: $dark-gray;
+    }
+  }
+  .cell.medium-auto {
+    margin-bottom: 2rem;
+  }
+  .contact{
+    flex: 1.5!important;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  footer {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 639px) {
+  footer {
+    .grid-y {
+      div:first-of-type {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+@include themify($themes) {
+  footer {
+    .icon-logo-graca,
+    .icon-logo-minna,
+    .icon-logo-gracehome,
+    .icon-logo-sonno {
+      color: themed("primary");
+    }
+    a.highlight {
+      color: themed("primary");
+    }
+    a[href^="tel"] {
+      color: themed("primary");
+    }
+  }
+}

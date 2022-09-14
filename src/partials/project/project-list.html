@@ -1,0 +1,41 @@
+<section class="project-list">
+  <div class="grid-x show-for-medium" style="margin-bottom: 2.5rem;">
+    <div class="cell medium-9">
+      <h3 class="text-center"><span>Projectos de Decoração Personalizados</span></h3>
+    </div>
+    <div class="cell medium-3 text-center">
+      <a data-toggle="offCanvasRequestProject" class="hollow cast button rounded small">Pedir Projeto<i class="icon-arrow_forward"></i></a>
+    </div>
+  </div>
+  <div class="grid-x">
+    <div class="cell auto">
+      <div class="project-thumbnail-slider">
+        {{#each projects.projects}}
+        <div class="thumbnail-wrp">
+          <img alt="{{name}}" src="http://via.placeholder.com/500x350">
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="project-detail-slider">
+    {{#each projects.projects}}
+    <div>
+      <div class="grid-x align-center-middle">
+        <div class="cell medium-6 small-order-1 medium-order-1">
+          <a href="projeto.html" >
+            <img alt="{{name}}" src="http://via.placeholder.com/1080x760">
+          </a>
+        </div>
+        <div class="cell medium-6 text-center align-center-middle small-order-2 medium-order-2">
+          <h6>{{heading}}</h6>
+          <h4>Project Name {{name}}</h4>
+          <p>{{description}}</p>
+          <a href="projeto.html" class="hollow cast button rounded small">Ver Projeto<i class="icon-arrow_forward"></i></a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  
+</section>

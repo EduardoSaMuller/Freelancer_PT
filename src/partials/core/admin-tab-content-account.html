@@ -1,0 +1,100 @@
+
+<div class="account-container">
+<ul class="tabs" data-tabs id="account-tabs">
+  <li class="tabs-title is-active"><a href="#p1" aria-selected="true">Informações Pessoais</a></li>
+  <li class="tabs-title"><a data-tabs-target="p2" href="#p2">Email</a></li>
+  <li class="tabs-title"><a data-tabs-target="p3" href="#p3">Password</a></li>
+</ul>
+</div>
+<div class="tabs-content" data-tabs-content="account-tabs">
+  <div class="tabs-panel is-active" id="p1">
+    <form class="short">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 float-label">
+          <input type="text"  placeholder=" ">
+          <label >Nome</label> 
+        </div>
+        <div class="cell small-12  float-label">
+          <input type="text"  placeholder=" ">
+          <label >Morada</label>
+        </div>
+        <div class="cell small-12 medium-4  float-label">
+          <input type="text"  placeholder=" ">
+          <label >Código Postal</label>
+        </div>
+        <div class="cell small-12 medium-4  float-label">
+          <input type="text"  placeholder=" ">
+          <label >Localidade</label>
+        </div>
+        <div class="cell small-12 medium-4  float-label">
+          <select name="distrito"  placeholder=" ">
+            <option value="valor1">Valor 1</option>
+            <option value="valor2">Valor 2</option>
+            <option value="valor3">Valor 3</option>
+          </select>
+          <label >Distrito</label>
+        </div>
+        <div class="cell small-12 medium-6  float-label">
+          <input type="text"  placeholder=" ">
+          <label >NIF</label>
+        </div>
+        <div class="cell small-12 medium-6  float-label">
+          <input type="text"  placeholder=" ">
+          <label >Telemovel</label>
+        </div>
+        <div class="cell small-12">
+          <input id="receber-newsletter" type="checkbox"><label for="receber-newsletter">Receber Newsletter</label>
+        </div>
+        <div class="cell small-12 clearfix">
+          <button type="submit" class=" float-right button cast rounded small">Gravar<i class="icon-arrow_forward"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="tabs-panel" id="p2">
+    <form class="short">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 float-label">
+          <input type="email"  placeholder="rubenamado87@gmail.com " value="rubenamado87@gmail.com" disabled>
+          <label >Email Atual</label>
+        </div>
+        <div class="cell small-12 medium-6 float-label">
+          <input type="email"  placeholder=" ">
+          <label >Novo Email</label>
+        </div>
+        <div class="cell small-12 medium-6 float-label">
+          <input type="email" placeholder=" " >
+          <label >Confirme Email</label>
+        </div>
+        <div class="cell small-12 float-label">
+          <input type="password" placeholder=" " >
+          <label >Password</label>
+        </div>
+        <div class="cell small-12 clearfix">
+          <button type="submit" class=" float-right button cast rounded small">Alterar Email<i class="icon-arrow_forward"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="tabs-panel" id="p3">
+    <form class="short">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 float-label">
+          <input type="password" placeholder=" ">
+          <label >Password Atual</label>
+        </div>
+        <div class="cell small-12 float-label">
+          <input type="password" placeholder=" ">
+          <label >Nova Password</label>
+        </div>
+        <div class="cell small-12 float-label">
+          <input type="password" placeholder=" ">
+          <label >Confirmar Password</label>
+        </div>
+        <div class="cell small-12 clearfix">
+          <button type="submit" class=" float-right button cast rounded small">Alterar Password<i class="icon-arrow_forward"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

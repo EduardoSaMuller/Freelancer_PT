@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'questa-grande-regular-webfont';
+    src: url('questa-grande-regular-webfont.woff2') format('woff2'),
+         url('questa-grande-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

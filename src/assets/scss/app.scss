@@ -1,0 +1,181 @@
+@charset 'utf-8';
+@import "settings";
+@import "theme";
+@import "foundation";
+@import "motion-ui";
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-flex-classes;
+@include motion-ui-transitions;
+@include motion-ui-animations;
+$identity-color: #be4d7b;
+@import "components/menuLateral/menuLateral";
+@import "components/os-servicos/os-servicos";
+@import "components/obrigado/obrigado";
+@import 'components/email/email';
+@import "slick.scss";
+@import "../iconset/style.css";
+@import "main.scss";
+@import "components/core/overrides";
+@import "../typeface/questa/style.css";
+@import "../typeface/agane/style.css";
+@import "components/promo/subscribe-newsletter";
+@import "components/core/preloader";
+@import "components/core/main-nav";
+@import "components/core/home-slider";
+@import "components/core/social-nav";
+@import "components/core/footer";
+@import "components/core/off-canvas-mobile-nav";
+@import "components/core/login-call";
+@import "components/core/twentytwenty";
+@import "components/core/rating";
+@import "components/core/img-gallery";
+@import "components/core/cover-img";
+@import "components/core/intro-module";
+@import "components/core/mfp-animation";
+@import "components/core/admin-area";
+@import "components/core/login-reveal";
+@import "components/core/ready-animations";
+@import "components/core/vertical-banner";
+@import "components/content/slider";
+@import "components/content/section-header";
+@import "components/content/featured-categories";
+@import "components/content/featured-categories-alt";
+@import "components/content/partners";
+@import "components/content/information-highlights";
+@import "components/content/contact";
+@import "components/content/services";
+@import "components/content/quiz";
+@import "components/content/favorite-counter";
+@import "components/content/testemonials";
+@import "components/project/project-list";
+@import "components/project/project-detail";
+@import "components/project/project-promo";
+@import "components/project/off-canvas-request-project";
+@import "components/before-after/before-after-list";
+@import "components/before-after/before-after-detail";
+@import "components/before-after/before-after-detail";
+@import "components/store/recomended-products";
+@import "components/store/product-thumbnail";
+@import "components/store/product-list";
+@import "components/store/product-detail";
+@import "components/store/cart-item";
+@import "components/store/off-canvas-cart";
+@import "components/store/cart-process";
+@import "components/store/product-composition";
+
+#modal-info{
+  top:65px!important;
+  left:40px;
+  position: fixed;
+  overflow-y: visible;
+  max-width: 600px;
+  width: auto!important;
+  border-radius: 5px;
+  .modal-body{
+    position:relative;
+    .new-form{
+      margin-top: 0;
+      padding: 0rem 0 3rem;
+    }
+    .close-button{
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid;
+      padding: 5px 16px;
+      height: 35px;
+      position: absolute;
+      left: 44px;
+      top: 60%;
+      width: 82px;
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    z-index: 2000000;
+    margin-left: -4px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #fff #fff;
+  }
+  @media screen and (max-width:40em) {
+    min-height: 120px;
+    max-height: 125px;
+  }
+}
+@media screen and (min-width: 10em) {
+  .main-nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 10em) and (max-width: 640px) {
+  #bodyCanvas {
+    padding-top: 5rem;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 1023px) {
+  .off-canvas-content {
+    margin-top: 5rem;
+  }
+  .navbar-horizontal {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .off-canvas-content {
+    margin-top: 5rem;
+  }
+  .navbar-horizontal {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 1172px) {
+  .off-canvas-content.main-content {
+    margin-top: 5rem;
+  }
+}

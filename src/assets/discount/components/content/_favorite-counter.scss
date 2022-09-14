@@ -1,0 +1,40 @@
+a.favorite-counter{
+  //font-size: 70%;
+  font-size:1.5rem;
+  display: inline-block;
+  color:$dark-gray;
+  i{
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:1.5rem;
+    //color:$identity-color;
+    -moz-transition: color 350ms ease-in-out;
+    -webkit-transition: color 350ms ease-in-out;
+    transition: color 350ms ease-in-out;
+    &:before{
+      content: "\e87e";
+    }
+  }
+  &.is-favorite{
+    i:before{
+      content: "\e87d";
+    }
+  }
+}
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  a.favorite-counter i{
+    color:themed('primary');
+  }
+}

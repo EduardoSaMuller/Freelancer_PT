@@ -1,0 +1,17 @@
+<div class="grid-x grid-margin-x">
+  <div class="cell login-call text-center medium-text-lef iniciar-sessao">
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell medium-auto">
+        <i class="icon-lock"></i>
+        <a data-toggle="create-new-form" id="iniciar-sessao" data-toggler data-animate="fade-in fade-out"  class="button secondary rounded small cast-two closed">Iniciar Sessão<i class="icon-arrow_downward"></i></a>
+      </div>
+      
+    </div>
+    <div  id="create-new-form"  data-toggler data-animate="fade-in fade-out" >
+      {{> login-reveal-new}}
+    </div>
+    <div class="convidado visible">
+      <a id="open-convidado" data-toggle="cart-delivery-confirmation" data-toggler data-animate="fade-in fade-out"  class="button secondary rounded small cast-two">Iniciar como Convidado</a>
+    </div>
+  </div>
+</div>

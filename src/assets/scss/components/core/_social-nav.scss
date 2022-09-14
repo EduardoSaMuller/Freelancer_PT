@@ -1,0 +1,1 @@
+section.social-nav{padding:1rem 0!important;border-top:1px solid lightgray;border-bottom:1px solid lightgray;i{font-size:2rem;}}@import 'themes-config.scss';@include themify($themes) {section.social-nav i{color:themed('primary');}}

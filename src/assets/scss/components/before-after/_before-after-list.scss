@@ -1,0 +1,29 @@
+section.before-after-list {
+  .text-content {
+    padding: 3rem;
+    h3 {
+      font-weight: 600;
+    }
+    p {
+      font-size: 0.8rem;
+      max-width: 40rem;
+    }
+    // a.button{
+    //   font-size: .9rem;
+    //   width: 180px;
+    //   font-weight: bold;
+    //   i{
+    //     font-size: 1rem;
+    //     margin-top: 6px!important;
+    //     margin-right: 20px;
+    //   }
+    // }
+  }
+  @media screen and (max-width:639px) {
+    .container-page-bf-af{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  
+}

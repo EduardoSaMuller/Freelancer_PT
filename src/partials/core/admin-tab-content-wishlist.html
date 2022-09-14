@@ -1,0 +1,38 @@
+
+<div class="wish-content-empty">
+  <div>
+    <h3>Não há items na sua lista de desejos.</nav></h3>
+  </div>
+</div>
+
+<table class="unstriped stack">
+  <thead>
+    <tr class="text-center medium-text-left">
+      <th></th>
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Acções</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each store.wishlist}}
+    <tr class="text-center medium-text-left">
+      <td>
+        <a class="thumbnail-img" href="produto.html">
+          <img alt="{{name}}" src="{{img-link}}">
+        </a>
+      </td>
+      <td>
+        <h6><a href="produto.html">{{name}}</a></h6>
+        <p><a href="produto.html">{{ref}}</a></p>
+      </td>
+      <td>
+        <span class="price">{{price}}</span>
+        <small class="old-price">{{old-price}}</small>
+      </td>
+      <td>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

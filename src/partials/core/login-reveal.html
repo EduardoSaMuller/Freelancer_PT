@@ -1,0 +1,38 @@
+<div class="reveal" id="loginReveal" data-reveal data-close-on-click="true" data-animation-in="slide-in-down" data-animation-out="slide-out-up" data-additional-overlay-classes="transparent">
+  
+<div class="new-form">
+    <div class="nova-conta">
+        <h4> <i class="icon-user-plus"></i>Não tens conta?Regista-te</h4>
+        <p>Demorará apenas 30 segundos</p>
+        <ul class="menu vertical fade-out-vertical" data-toggler data-animate="fade-in fades-out">
+            <li><i class="icon-check_circle"></i>Guarda os teus dados de envio e de pagamento para poupares tempo nas tuas seguintes compras.</li>
+            <li><i class="icon-check_circle"></i>Faz o seguimento das tuas encomendas.</li>
+        </ul>
+        <div id="create-button" data-toggler data-animate="fade-in fades-out">
+            <button data-toggle="create-form" class="button small medium-expanded account">CRIAR CONTA</button>
+        </div>
+        <div id="create-form" class="open" data-toggler data-animate="fade-in fade-out" style="display:none;">
+            {{> login-register-form}}
+        </div>
+    </div>
+  <div class="login-conta">
+      <div class="cell medium-5 small-order-1 medium-order-4">
+          <h4> <i class="icon-user"></i>Iniciar Sessão</h4>
+          <div id="login-form" data-toggler data-animate="fade-in fade-out">
+              {{> login-entry-form-new}}
+          </div>
+          <div id="recover-form" data-toggler data-animate="fade-in fade-out" style="display:none;">
+              {{> login-recover-form}}
+          </div>
+      </div>
+  </div>
+  
+</div>
+  
+
+
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

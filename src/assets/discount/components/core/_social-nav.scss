@@ -1,0 +1,18 @@
+section.social-nav{
+  padding:1rem 0;
+  border-top:1px solid lightgray;
+  border-bottom:1px solid lightgray;
+  i{
+    font-size:2rem;
+    //color:$identity-color;
+  }
+}
+
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  section.social-nav i{
+    color:themed('primary');
+  }
+}

@@ -1,0 +1,99 @@
+projects:
+  -
+    name: 1
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1920x1080
+    id: img1
+    modal-id: modal-img1
+  -
+    name: 2
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1080x1920
+    id: img2
+    modal-id: modal-img2
+  -
+    name: 3
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1920x1080
+    id: img3
+    modal-id: modal-img3
+  -
+    name: 4
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1080x1920
+    id: img4
+    modal-id: modal-img4
+  -
+    name: 5
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1920x1080
+    id: img5
+    modal-id: modal-img5
+  -
+    name: 6
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1080x1920
+    id: img6
+    modal-id: modal-img6
+  -
+    name: 7
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1920x1080
+    id: img7
+    modal-id: modal-img7
+  -
+    name: 8
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1080x1920
+    id: img8
+    modal-id: modal-img8
+  -
+    name: 9
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1920x1080
+    id: img9
+    modal-id: modal-img9
+  -
+    name: 10
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1080x1920
+    id: img10
+    modal-id: modal-img10
+  -
+    name: 11
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1920x1080
+    id: img11
+    modal-id: modal-img11
+  -
+    name: 12
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1080x1920
+    id: img12
+    modal-id: modal-img12
+  -
+    name: 13
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1920x1080
+    id: img13
+    modal-id: modal-img13
+  -
+    name: 14
+    heading: criamos o espaço dos seus sonhos
+    description: Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.
+    img-link: http://via.placeholder.com/1080x1920
+    id: img14
+    modal-id: modal-img14

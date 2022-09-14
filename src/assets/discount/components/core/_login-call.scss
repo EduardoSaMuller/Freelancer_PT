@@ -1,0 +1,40 @@
+.login-call{
+  // border:1px solid $light-gray;
+  border-radius: $theme-radius;
+  padding:1rem;
+  padding-bottom: .5rem;
+  i.icon-lock{
+    margin-left:-5.rem;
+    font-size:3rem;
+  }
+  h6{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:$dark-gray;
+    font-size:.85rem;
+  }
+  h5{
+    font-weight: bold;
+    color:$primary-color;
+  }
+  p{
+    font-size:.85rem;
+    color:$dark-gray;
+  }
+  a.button{
+    margin:0;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0;
+    text-align: left;
+    width: auto
+  }
+  i.icon-arrow-downward{
+    font-size: 2rem;
+    position: relative;
+    background: transparent;
+    color: black;
+    vertical-align: sub;
+  }
+}

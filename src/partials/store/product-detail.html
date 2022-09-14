@@ -1,0 +1,18 @@
+<section class="product-detail">
+    <div class="grid-x" id="sticky-section">
+      <div class="cell medium-6 large-8 img-modal-list hide-for-small-only" >
+        <div class="popup-gallery mfp-fade product-container " >
+          {{#each store.product-img}}
+          <a href="{{link}}" title="{{name}}" id="{{id}}" data-magellan-target="{{id}}">
+            <img alt="{{name}}" src="{{link}}">
+          </a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="cell medium-6 large-4" data-sticky-container>
+        <div class="product-container">
+          {{> product-detail-description}}
+        </div>
+      </div>
+    </div>
+</section>

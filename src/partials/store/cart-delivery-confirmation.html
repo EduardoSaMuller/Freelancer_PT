@@ -1,0 +1,134 @@
+<h5 class="title morada-title blocked"> <span class="etapa_one">1</span> Morada de faturação e entrega <span id="edit-faturacao"class=" invisible">Editar</span></h5> 
+<div class="summary-faturacao invisible" >
+  <p class="summary-info">
+  </p>
+</div>
+
+<div id="cart-delivery-confirmation" data-toggler data-animate="fade-in fade-out" style="display:none;">
+  
+  <div class="tabs-content" data-tabs-content="cart-delivery-confirmation">
+    <div>
+      <label class="custom-checkbox" for="company-form">
+        É Empresa
+        <input type="checkbox" id="company-form" data-toggle="company" data-toggler data-animate="fade-in fade-out">
+        <span></span>
+      </label>
+    </div>
+    <div class="tabs-panel is-active" id="personal">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-8 float-label billing">
+          <input id="id-first-name-billing" type="text" placeholder=" " required value="Eduardo Muller">
+          <label>Nome Completo*</label>
+        </div>
+        <div class="cell medium-4 float-label billing">
+          <input id="id-dni-billing" type="text" placeholder=" " required>
+          <label>N Contribuinte*</label>
+        </div>
+        <div class="cell medium-8 float-label billing">
+          <input id="id-email-billing" type="email" placeholder=" " required>
+          <label>Email*</label>
+        </div>
+        <div class="cell medium-4 float-label billing">
+          <input id="id-phone-billing" type="text" placeholder=" " required>
+          <label>Telemóvel*</label>
+        </div>
+        <div class="cell medium-12 float-label billing">
+          <textarea id="id-morada-billing" rows="2" maxlength="" type="text" placeholder=" " required></textarea>
+          <label>Morada Completa*</label>
+        </div>
+        <div class="cell medium-4 float-label billing">
+          <input id="id-postalcode-billing" type="text" placeholder=" " required>
+          <label>Código Postal*</label>
+        </div>
+        <div class="cell medium-4 float-label billing">
+          <input id="id-address-billing" type="text" placeholder=" " required>
+          <label>Localidade*</label>
+        </div>
+        <div class="cell medium-4 float-label billing">
+          <select id="id-district-billing" type="text" placeholder=" "  name="concelho" required>
+            <option value="">Valor 1</option>
+              <option value="valor1">Valor 1</option>
+              <option value="valor2" >Valor 2</option>
+              <option value="valor3">Valor 3</option>
+           
+          </select>
+          <label>Concelho*</label>
+        </div>
+        <!-- <div class="cell medium-4 float-label billing">
+          <input id="id-city-billing" type="text" placeholder=" " required>
+          <label>Cidade*</label>
+        </div> -->
+      </div>
+      <div id="company" class="grid-x grid-margin-x" data-toggler data-animate="fade-in fade-out"
+        style="display: none;">
+        <!-- <div class="cell medium-6 float-label">
+          <input id="id-dni-billing" type="text" placeholder=" " required>
+          <label>DNI/NIF/CIF*</label>
+        </div> -->
+        <div class="cell medium-6 float-label">
+          <input id="id-company-billing" type="text" placeholder=" " required>
+          <label>Company*</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <label class="custom-checkbox" for="morada-form">
+      A mesma morada de entrega
+      <input type="checkbox" id="morada-form" data-toggle="create-morada-form" data-toggler
+        data-animate="fade-in fade-out" checked>
+      <span></span>
+    </label>
+  </div>
+
+
+  <div class="tabs-content" id="create-morada-form" data-toggler data-animate="fade-in fade-out"
+    data-tabs-content="cart-delivery-confirmation" style="display: none;">
+    <h5 class="title disabled"> Morada de entrega</h5>
+    <div class="tabs-panel is-active" id="personal">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-6 float-label">
+          <input id="id-first-name-morada" type="text" placeholder=" " required>
+          <label>Nome próprio*</label>
+        </div>
+        <div class="cell medium-6 float-label">
+          <input id="id-last-name-morada" type="text" placeholder=" " required>
+          <label>Apelido*</label>
+        </div>
+        <div class="cell medium-6 float-label">
+          <input id="id-email-morada" type="email" placeholder=" " required>
+          <label>Email*</label>
+        </div>
+        <div class="cell medium-6 float-label">
+          <input id="id-phone-morada" type="text" placeholder=" " required>
+          <label>Telefone*</label>
+        </div>
+        <div class="cell medium-6 float-label">
+          <textarea id="id-morada-morada" rows="2" maxlength="" type="text" placeholder=" " required></textarea>
+          <label>Morada*</label>
+        </div>
+        <div class="cell medium-6 float-label">
+          <input id="id-address-morada" type="text" placeholder=" " required>
+          <label>Apartamento/porta/etc...</label>
+        </div>
+        <div class="cell medium-4 float-label">
+          <input id="id-postalcode-morada" type="text" placeholder=" " required>
+          <label>Código Postal*</label>
+        </div>
+        <div class="cell medium-4 float-label">
+          <input id="id-district-morada" type="text" placeholder=" " required>
+          <label>Distrito*</label>
+        </div>
+        <div class="cell medium-4 float-label">
+          <input id="id-city-morada" type="text" placeholder=" " required>
+          <label>Cidade*</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="next-step">
+    <button id="continue-to-send" >Continuar</button>
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+<section class="before-after-detail">
+  <div class="grid-x align-center text-center">
+    <div class="cell small-12 section-header">
+      <h6>ANTES E DEPOIS</h6>
+      <h3><span>Projeto Waterfall</span></h3>
+    </div>
+    <div class="cell medium-6">
+    <p>O hall de entrada é a primeira imagem que temos da nossa casa, é o espaço que damos a conhecer. É, por isso, indispensável torná-lo numa divisão acolhedora e que demonstre a nossa personalidade.
+    Para este projeto, procurámos uma solução prática e versátil, desde um banco confortável até ao cabide onde pode guardar casacos, carteiras e tudo o que é essencial ter à mão.</p>
+  </div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="cell small-12">
+    <div class="before-after-thumbnail-slider">
+      {{#each before-after.before-after-list}}
+      <div class="thumbnail-wrp">
+        <img alt="{{name}}" src="../../assets/img/depois.jpg">
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="cell small-12">
+    <div class="before-after-slider text-nav">
+      {{#each before-after.before-after-list}}
+      <div>
+        <div class="before-after-container">
+          <img alt="{{name}} Antes" src="../../assets/img/antes.jpg">
+          <img alt="{{name}} Depois" src="../../assets/img/depois.jpg">
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  
+</div>
+</section>

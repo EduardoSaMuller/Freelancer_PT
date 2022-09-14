@@ -1,0 +1,58 @@
+<footer>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x text-center medium-text-left">
+      <div class="cell medium-auto">
+        <div class="grid-y">
+          <div class="cell medium-auto text-center">
+            <a class="footer-logo" href="home.html">
+              <i class="{{sonno-class}} {{gracehome-class}} {{graca-class}} {{graca-fr-class}} {{minna-class}}"></i>
+            </a>
+          </div>
+          <div class="cell text-center">
+            <img src="../../assets/img/footer/grupograca-black.png">
+          </div>
+        </div>
+      </div>
+      <div class="cell medium-auto contact">
+        <h6>Contactos e Apoio ao Cliente</h6>
+        <p>Rua da GNR nº13</br>
+          3105-088 Guia, PBL</p>
+          <p>Telefone: <a href="tel:123456789"> +361 236 950 027</a>
+            </p>
+            
+            <p>Whatsapp: <a href="tel:123456789"> +361 917 662 350</a></p>
+            <p>Email: <a class="highlight" href="#">apoio@graca.pt</a> </p>
+        </div>
+        <div class="cell medium-auto">
+          <h6>Informações</h6>
+          <ul class="menu vertical ">
+            {{#each navigation.footer-1}}
+            <li {{#ifpage name}} class="active"{{/ifpage}}>
+              <a href="{{link}}.html">{{name}}</a>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+        <div class="cell medium-auto">
+          <h6>Horário</h6>
+          <ul class="menu vertical">
+            <li><p>
+              Segunda a Sábado</br>
+              10:00h às 13:00h - 14:00h ás 19:00h</p>
+            </li>
+          </ul>
+          <h6><a href="">POLITICA DE PRIVACIDADE E PROTEÇÃO DE DADOS</a> </h6>
+          <h6><a href="">LIVRO DE RECLAMAÇÕES</a></h6>
+  
+        </div>
+    </div>
+    <div class="grid-x grid-margin-x footer-floor text-center medium-text-left">
+      <div class="cell medium-6">
+        <a href="#">© Graça Interiores</a>
+      </div>
+      <div class="cell medium-6 medium-text-right">
+         <a href="#">Segurança e Privacidade</a>
+      </div>
+    </div>
+  </div>
+</footer>

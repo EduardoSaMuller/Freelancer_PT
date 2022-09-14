@@ -1,0 +1,14 @@
+section.testemonials{
+  padding:$section-padding;
+  border-top:1px solid $light-gray;
+  h6{
+    margin-top: 1rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    color:$dark-gray;
+  }
+  h4{
+    font-family: 'questa-grande-regular-webfont';
+    font-size:2rem;
+  }
+}

@@ -1,0 +1,60 @@
+<ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false" >
+  <li class="no-submenu">
+    <a href="#">No Submenu</a>
+  </li>
+  <li class="no-submenu">
+    <a href="#">No Submenu</a>
+  </li>
+  <!-- <li class="is-active"> -->
+  <li>
+    <a href="#">Aberto</a>
+    <ul class="menu vertical submenu-wrp is-active">
+      <li>
+        <a href="#">Salas Completas (5222222)</a>
+      </li>
+      <li class="is-submenu-active">
+        <a href="#">Mesas de Jantar (124)</a>
+      </li>
+      <li>
+        <a href="#">Aparadores (24)</a>
+      </li>
+      <li>
+        <a href="#">Mesas de Vidro (25)</a>
+      </li>
+      <li>
+        <a href="#">Vitrines (12)</a>
+      </li>
+      <li>
+        <a href="#">Cadeiras (2)</a>
+      </li>
+    </ul>
+  </li>
+  {{#each store.categories}}
+  <li>
+    <a href="#">{{name}}</a>
+    <ul class="menu vertical submenu-wrp">
+      <li>
+        <a href="#">Salas Completas (52)</a>
+      </li>
+      <li class="is-submenu-active">
+        <a href="#">Mesas de Jantar (124)</a>
+      </li>
+      <li>
+        <a href="#">Aparadores (24)</a>
+      </li>
+      <li>
+        <a href="#">Mesas de Vidro (25)</a>
+      </li>
+      <li>
+        <a href="#">Vitrines (12)</a>
+      </li>
+      <li>
+        <a href="#">Cadeiras (2)</a>
+      </li>
+    </ul>
+  </li>
+  {{/each}}
+  <li class="no-submenu">
+    <a href="#">No Submenu</a>
+  </li>
+</ul>

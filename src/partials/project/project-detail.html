@@ -1,0 +1,25 @@
+<section class="project-detail">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6 small-order-2 large-order-1" id="sticky-section">
+        <div class="popup-gallery">
+          {{#each projects.projects}}
+          <a href="{{img-link}}" title="{{name}}" id="{{id}}" data-magellan-target="{{id}}">
+            <img alt="{{name}}" src="{{img-link}}">
+          </a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="cell large-6 small-order-1 large-order-2" data-sticky-container>
+        <div data-sticky data-sticky-on="large" data-margin-top="16" data-top-anchor="sticky-section:top" data-btm-anchor="sticky-section:bottom">
+          <div class="text-center">
+            <h6>CRIAMOS O ESPAÇO DOS SEUS SONHOS</h6>
+            <h4>Projecto de Decoração</h4>
+            <p>Dispomos de um serviço personalizado de decoração de interiores que oferece uma vasta escolha de produtos para idealizar a casa dos seus sonhos.</p>
+            <a href="lista-projetos.html" class="hollow cast button rounded small">Ver Lista<i class="icon-arrow_forward"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

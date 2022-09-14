@@ -1,0 +1,131 @@
+<div class="grid-x grid-margin-x message-layout">
+ 
+  <div class="cell shrink">
+    <a data-open="new-message" class="hollow cast button rounded small">Nova Mensagem<i class="icon-arrow_forward"></i></a>
+  </div>
+</div>
+<div class="message-content-empty">
+  <div>
+    <h3>Não há registro de mensagens.</nav></h3>
+  </div>
+</div>
+<div class="message-content">
+
+<table class="unstriped stack">
+  <thead>
+    <tr class="text-center medium-text-left">
+      <th>Assunto</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center medium-text-left ">
+      <td>
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        <span> 2018/09/10</span>
+      </td>
+      <td class="demo-2">
+        Nova Mensagem!
+      </td>
+    </tr>
+    <tr class="text-center medium-text-left selected">
+      <td>
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        <span> 2018/09/10</span>
+      </td>
+      <td class="demo-2">
+        Nova Mensagem!
+      </td>
+    </tr><tr class="text-center medium-text-left">
+      <td>
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        <span> 2018/09/10</span>
+      </td>
+      <td class="demo-2">
+        Nova Mensagem!
+      </td>
+    </tr><tr class="text-center medium-text-left">
+      <td>
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        <span> 2018/09/10</span>
+      </td>
+      <td class="demo-2">
+        Nova Mensagem!
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+<div class="grid-x grid-margin-x message-content-info">
+  
+  <div class="no-message">
+    <h5>Selecione uma mensagem.</h5>
+  </div>
+  <div class="cell auto with-message">
+    <h5>Assunto : </h5>
+    <div class="message-layout-content"> 
+      <ul class="accordion " >
+      <li class="accordion-item client-side " id="first-message" >
+        <a href="#" class="accordion-title">Nome do Utilizador <small>2018-09-24 12:34:00</small></a>
+        <div class="accordion-content" >
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </li>
+      <li class="accordion-item client-side" >
+        <a href="#" class="accordion-title">Nome do Utilizador <small>2018-09-24 12:34:00</small></a>
+        <div class="accordion-content">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </li>
+      <li class="accordion-item company-side" id="last-message" >
+        <a href="#" class="accordion-title">Apoio Cliente <small>2018-09-24 14:26:10</small></a>
+        <div class="accordion-content" >
+          <p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+   
+    <form>
+      <div class="grid-x grid-margin-x create-message">
+        <div class="cell small-12">
+          <textarea rows="8" placeholder="Mensagem"></textarea>
+        </div>
+        <div class="cell small-12 clearfix ">
+          <ul class="message-actions">
+            <!-- <li class="first-message"><a href="#first-message" id='first-message-action' data-tooltip tabindex="1" title="Primeira Mensagem"><i class="icon-arrow_upward "></i></a></li> -->
+            <li class="last-message"><a href="#last-message" id='last-message-action'data-tooltip tabindex="1" title="Ultima Mensagem"><i class="icon-arrow_downward "></i></a></li>
+          </ul>
+          <button type="submit" class=" float-right button cast rounded small">Responder<i class="icon-arrow_forward"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+<div class="reveal" id="new-message" data-reveal  data-animation-in="fade-in" data-animation-out="fade-out">
+  <h3>Nova Mensagem</h3>
+  <form>
+    <div class="grid-x grid-margin-x ">
+      <div class="cell small-12 float-label">
+        <input type="text" placeholder=" ">
+        <label >Assunto</label>
+      </div>
+      
+      <div class="cell small-12 float-label">
+        <textarea rows="8" placeholder=" "></textarea>
+        <label >Mensagem</label>
+      </div>
+      <div class="cell small-12 clearfix">
+        <button type="submit" class=" float-right button cast rounded small">Enviar<i class="icon-arrow_forward"></i></button>
+      </div>
+    </div>
+  </form>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

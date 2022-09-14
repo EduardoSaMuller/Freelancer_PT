@@ -1,0 +1,108 @@
+
+@include mui-series {
+  .main-nav{
+    @include mui-queue(350ms, 0s, fade, slide($direction: down));
+  }
+  /*.off-canvas-content{
+    @include mui-queue(350ms, 0ms, fade, slide($direction: up));
+  }*/
+  .section-header{
+    @include mui-queue(500ms, 0ms, fade, slide($direction: down));
+  }
+  .project-list h3{
+    @include mui-queue(350ms, 0s, fade, slide($direction: left));
+  }
+  .project-list div.medium-3 .button{
+    @include mui-queue(350ms, 0s, fade, slide($direction: right));
+  }
+}
+
+@include mui-series {
+  /*
+  .home-slider .slick-slide[aria-hidden="false"] img{
+  @include mui-queue(500ms, 0ms, fade, slide($direction: up));
+  @include mui-queue(500ms, 0ms, fade, slide($direction: down));
+}
+.home-slider .slick-slide[aria-hidden="true"] img{
+@include mui-queue(500ms, 0ms, fade, slide($direction: down));
+@include mui-queue(500ms, 0ms, fade, slide($direction: up));
+}
+*/
+}
+@include mui-series {
+  /*.thumbnail-img img, .slick-slider{
+    @include mui-queue(250ms, 0ms, fade, slide($direction: up));
+  }
+  .slick-slider{
+    @include mui-queue(250ms, 0ms, fade, slide($direction: up));
+  }*/
+  span.discount{
+    @include mui-queue(300ms, 0ms, fade, slide($direction: left));
+  }
+}
+@include mui-series {
+  .before-after-detail p{
+    @include mui-queue(500ms, 250ms, fade, slide($direction: up));
+  }
+  .before-after-list .grid-x.medium-text-left{
+    @include mui-queue(500ms, 0ms, fade, slide($direction: up));
+  }
+}
+@include mui-series {
+  .services .icons-grid{
+    @include mui-queue(500ms, 250ms, fade, slide($direction: up));
+  }
+  .services .grid-x.medium-text-left{
+    @include mui-queue(500ms, 0ms, fade, slide($direction: up));
+  }
+}
+@include mui-series {
+  .contact .icons-grid{
+    @include mui-queue(500ms, 250ms, fade, slide($direction: up));
+  }
+  .contact .form-wrp{
+    @include mui-queue(250ms, 0ms, fade);
+  }
+  .contact .form-wrp form  {
+    @include mui-queue(500ms, 0ms, fade, slide($direction: up));
+  }
+}
+@include mui-series {
+  /*.img-modal-list{
+    @include mui-queue(750ms, 0ms, fade, slide($direction: up));
+  }*/
+}
+@include mui-series {
+  .cart-process-wrp{
+    @include mui-queue(350ms, 0ms, fade, slide($direction: right));
+  }
+  .cart-total-wrp{
+    @include mui-queue(350ms, 0ms, fade, slide($direction: left));
+  }
+}
+@include mui-series {
+  .tab-list-wrp{
+    @include mui-queue(350ms, 0ms, fade, slide($direction: right));
+  }
+  .tab-content-wrp{
+    @include mui-queue(350ms, 0ms, fade, slide($direction: left));
+  }
+}
+//@include mui-queue(500ms, 0ms, fade, slide($direction: up));
+@include mui-series {
+  .main-nav{
+    @include mui-queue(350ms, 0s, fade, slide($direction: down));
+  }
+  /*.off-canvas-content{
+    @include mui-queue(350ms, 0ms, fade, slide($direction: up));
+  }*/
+  .section-header{
+    @include mui-queue(500ms, 0ms, fade, slide($direction: down));
+  }
+  .project-list h3{
+    @include mui-queue(350ms, 0s, fade, slide($direction: left));
+  }
+  .project-list div.medium-3 .button{
+    @include mui-queue(350ms, 0s, fade, slide($direction: right));
+  }
+}

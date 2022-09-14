@@ -1,0 +1,45 @@
+section.quiz{
+  padding:$section-padding;
+  h5{
+    margin-top:3.5rem;
+  }
+  .order-list{
+    margin:2rem 0;
+    input[type="number"]{
+      max-width: 3rem;
+      border: 1px solid $light-gray;
+      padding:.5rem;
+    }
+  }
+  ul[data-recomend-faces]{
+    i{
+      font-size:3rem;
+    }
+    a{
+      background-color:$medium-gray;
+      i{
+        color:$white;
+      }
+      &.is-selected{
+        //background-color:$identity-color;
+        i{
+          color:$white;
+        }
+      }
+    }
+
+  }
+}
+
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  section.quiz{
+    ul[data-recomend-faces]{
+      a.is-selected{
+        background-color:themed('primary');
+      }
+    }
+  }
+}

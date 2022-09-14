@@ -1,0 +1,26 @@
+section.services{
+  padding:$section-padding;
+  .icons-grid{
+    margin:2rem 0;
+    i{
+      color:$dark-gray;
+      font-size:4rem;
+    }
+    h5 {
+      min-height: 5rem;
+      a{
+        font-weight: 600;
+        font-size:.9rem;
+      }
+    }
+  }
+  .text-content{
+    padding:3rem;
+    h3{
+      font-family: 'questa-grande-regular-webfont';
+    }
+    p{
+      font-size:.8rem;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+<div class="product-info text-center medium-text-left" >
+  <div class="grid-y grid-padding-x">
+    <div class="cell small-12">
+      {{>product-detail-breadcrumbs}}
+    </div>
+    <div class="cell small-12">
+      <h1>Sala de Estar York</h1>
+      <h5>REF. ESTV8861   {{>favorite-counter}}</h5>
+    </div>
+      <div class="cell small-12">
+    <h2>
+      <span class="price">3.087,01 €</span>
+      <span class="discount">50%</span>
+      <span class="new_collection">NOVA COLEÇÃO</span>
+    </h2>
+    </div>
+    <div class="cell small-12">
+      <h5>
+      <small>Antes: <span class="old-price">3.430,00 €</span></small>
+      <small>Poupa: 3.430,00 €</small>
+      </h5>
+    </div>
+    <div class="cell small-12">
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <div class="grid-x grid-margin-x">
+        <div class="cell  small-12 medium-shrink" data-magellan>
+          <a href="#product-description" class="hollow button small" >Ver Detalhes</a>
+        </div>
+        <div class="cell small-12 medium-shrink add-cart">
+          <a class="button small" data-toggle="offCanvasCart">Adicionar ao Carrinho</a>
+          <span class="product-quantity-min product-details">Quantidade minima 2 unidades</span>
+        </div>
+      </div>
+    </div>
+    <div class="cell large-4">
+      <label>Acabamento
+      <div class="grid-x reveal-cast align-middle" data-open="finishings-reveal">
+        <div class="cell auto">
+        <p>Nome do Acabamento</p>
+        </div>
+        <div class="cell shrink">
+          <i class="icon-add"></i>
+          <button tabindex="2" data-tooltip data-fade-out-duration="0" data-click-open="false" data-template="
+          <div class='finishing-tooltip'>
+            <h4>Light Grey</h4>
+            <div style='background-color:lightgrey'></div>
+          </div>
+          ">
+          <div class="thumbnail" style="background-color:lightgrey;"></div>
+          </button>
+        </div>
+    </div>
+    </label>
+    </div>
+    <div class="cell small-12 large-4">
+      <label>Cor
+      <div class="grid-x reveal-cast align-middle" data-open="colors-reveal">
+        <div class="cell auto">
+        <p>Amarelo</p>
+        </div>
+        <div class="cell shrink">
+          <i class="icon-add"></i>
+          <button tabindex="2" data-tooltip data-fade-out-duration="0" data-click-open="false" data-template="
+          <div class='finishing-tooltip'>
+            <h4>Yellow</h4>
+            <div style='background-color:yellow'></div>
+          </div>
+          ">
+          <div class="thumbnail" style="background-color:yellow;"></div>
+          </button>
+    </div>
+    </div>
+    </label>
+    </div>
+    <div class="cell small-12 large-4">
+
+      <!--
+      <label>Medidas
+        <div class="grid-x reveal-cast align-middle" data-open="measures-reveal">
+          <div class="cell auto">
+          <p>C.182 x L.105  (345,00€) C.182 x L.105  (345,00€)</p>
+          </div>
+      </div>
+      </label>
+      -->
+      {{> product-detail-measures}}
+    </div>
+  </div>
+ {{> product-description}}
+</div>
+
+{{> finishings-reveal}}
+{{> colors-reveal}}
+{{> measures-reveal}}
+
+
+<div class="show-for-small-only">
+  <div class="popup-gallery-mobile mfp-fade">
+    {{#each store.product-img}}
+    <a href="{{link}}" title="{{name}}" id="{{id}}" data-magellan-target="{{id}}">
+      <img alt="{{name}}" src="{{link}}">
+    </a>
+    {{/each}}
+  </div>
+</div>

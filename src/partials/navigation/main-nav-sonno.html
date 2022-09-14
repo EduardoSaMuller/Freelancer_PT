@@ -1,0 +1,144 @@
+<div class="main-nav">
+  <div class="grid-x">
+    <div class="cell shrink hide-for-xxlarge">
+      <button aria-label="Open Menu" class="button clear" type="button" data-toggle="offCanvasMobileNav">
+        <i class="icon-menu"></i>
+      </button>
+    </div>
+    <div class="cell text-center auto xxlarge-shrink nav-logo " >
+      <a class="logo button clear" href="home.html">
+        <i class="{{sonno-class}}"></i>
+      </a>
+    </div>
+    <div class="cell auto show-for-xxlarge top-nav" >
+      <div class="grid-x" style="width:100%">
+        <div class="cell shrink">
+          <nav>
+          <ul class="menu horizontal tabs" data-tabs id="menu-tabs">
+              {{#each navigation.main-w-submenu}}
+              <li class="tabs-title">
+                <a data-tabs-target="{{tab-name}}" href="#{{tab-name}}" >{{name}}<i class="icon-keyboard_arrow_down"></i></a>
+              </li>
+              {{/each}}
+              {{#each navigation.main-no-submenu}}
+              <li class="no-submenu">
+                <a href="{{link}}.html">{{name}}</a>
+              </li>
+              {{/each}}
+            </ul>
+          </nav>
+        </div>
+        <div class="cell shrink">
+          <form class="search-form">
+            <div class="grid-x grid-margin-x">
+              <span>|</span>
+              <button aria-label="Pesquisa" class="button clear" type="button">
+                <i class="icon-search"></i>
+              </button>
+              <input class="input-group-field" type="search" placeholder="Pesquisar">
+            </div>
+          </form>
+        </div>
+        <div class="cell auto show-for-xlarge space-area">
+        </div>
+        <div class="cell shrink float-right">
+          <ul class="secondary-nav menu horizontal">
+            {{#each navigation.secondary}}
+            <li>
+              <a href="{{link}}.html">{{name}}</a>
+            </li>
+            {{/each}}
+            <li>
+              <a data-open="loginReveal">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cell shrink hide-for-large">
+      <a href="#" aria-label="login" data-open="loginReveal" class="button clear">
+        <i class="icon-person"></i>
+      </a>
+    </div>
+    <div class="cell shrink show-for-medium">
+      <a class="button clear" data-tooltip title="Messenger" href="#">
+        <i class="icon-h-messenger"></i>
+      </a>
+    </div>
+    <div class="cell shrink show-for-medium">
+      <a class="button clear" data-tooltip title="Whatsapp" href="#">
+        <i class="icon-h-whatsapp"></i>
+      </a>
+    </div>
+    <div class="cell shrink">
+      <button aria-label="Open Menu" class="button clear" type="button" data-toggle="offCanvasCart">
+        <i class="icon-cart"></i>
+        <span class="cart-counter">2</span>
+      </button>
+    </div>
+  </div>
+  <div class="subnav">
+    <div class="tabs-content" data-tabs-content="menu-tabs" >
+      <div class="grid-x grid-margin-x">
+        <div class="cell auto">
+          {{#each navigation.main-w-submenu}}
+          <div data-toggler data-animate="fade-in fade-out" class="tabs-panel" id="{{tab-name}}">
+            <div class="grid-x grid-margin-x medium-up-4 large-up-6">
+              <div class="cell">
+                <h5><a href="lista-produtos.html">Colchões</a></h5>
+                <ul class="menu vertical">
+                  <li><a href="lista-produtos.html">Colchões Molas</a></li>
+                  <li><a href="lista-produtos.html">Colchões Sem Molas</a></li>
+                  <li><a href="lista-produtos.html">Estrados</a></li>
+                </ul>
+              </div>
+              <div class="cell">
+                <h5><a href="lista-produtos.html">Colchões</a></h5>
+                <ul class="menu vertical">
+                  <li><a href="lista-produtos.html">Colchões Molas</a></li>
+                  <li><a href="lista-produtos.html">Colchões Sem Molas</a></li>
+                  <li><a href="lista-produtos.html">Estrados</a></li>
+                </ul>
+              </div>
+              <div class="cell">
+                <h5><a href="lista-produtos.html">Colchões</a></h5>
+                <ul class="menu vertical">
+                  <li><a href="lista-produtos.html">Colchões Molas</a></li>
+                  <li><a href="lista-produtos.html">Colchões Sem Molas</a></li>
+                  <li><a href="lista-produtos.html">Estrados</a></li>
+                </ul>
+              </div>
+              <div class="cell">
+                <h5><a href="lista-produtos.html">Colchões</a></h5>
+                <ul class="menu vertical">
+                  <li><a href="lista-produtos.html">Colchões Molas</a></li>
+                  <li><a href="lista-produtos.html">Colchões Sem Molas</a></li>
+                  <li><a href="lista-produtos.html">Estrados</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        <div class="cell medium-3">
+          <!-- 2 banners -->
+          <div class="grid-x  grid-margin-x grid-margin-y">
+          <div class="cell small-6">
+            <a href="produto.html"><img src="http://via.placeholder.com/250x250"></a>
+          </div>
+          <div class="cell small-6">
+            <a href="produto.html"><img src="http://via.placeholder.com/250x250"></a>
+          </div>
+          </div>
+          <!-- 1 banner -->
+          <div class="grid-x grid-margin-x grid-margin-y">
+          <div class="cell small-12">
+          <a href="produto.html"><img src="http://via.placeholder.com/600x250"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

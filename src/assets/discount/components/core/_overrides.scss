@@ -1,0 +1,338 @@
+@import "themes-config.scss";
+*:focus {
+  outline: none;
+}
+a {
+  transition: color 0.5s ease-in-out;
+}
+.price {
+  font-weight: 500;
+}
+.old-price {
+  text-decoration: line-through;
+}
+.discount {
+  color: $white;
+  padding: 0.15rem 0.25rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+.button.hollow.cast,
+.button.cast:not(.hollow),
+.button.hollow.cast-two,
+.button.cast-two:not(.hollow) {
+  background-color: $white;
+  position: relative;
+  padding-right: 2rem;
+  i {
+    position: absolute;
+    background-color: $primary-color;
+    color: $white;
+    border-radius: 50%;
+    padding: 0.37rem;
+    margin: 0.25rem;
+    top: 0;
+    right: 0;
+  }
+}
+.button.cast:not(.hollow) {
+  i {
+    position: absolute;
+    color: $white;
+  }
+}
+.button.cast-two:not(.hollow) {
+  i {
+    position: absolute;
+    color: $white;
+  }
+}
+textarea {
+  padding: 0.5rem 0;
+}
+textarea {
+  padding: 0.5rem 0;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+  font-size: 0.75rem;
+}
+.breadcrumbs a {
+  color: $dark-gray;
+}
+.slider {
+  height: 0.2rem;
+  margin-bottom: 1rem;
+}
+.slider-fill {
+  height: 0.2rem;
+}
+.slider-handle {
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.accordion {
+  background: transparent;
+}
+.accordion-title {
+  border: 0;
+  border-top: 1px solid $medium-gray;
+  font-weight: 700;
+  text-transform: uppercase;
+  small {
+    color: lighten($primary-color, 10%);
+    font-weight: 400;
+  }
+  &:before {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $dark-gray;
+  }
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+}
+.accordion-content {
+  border: 0;
+  background: transparent;
+  ul {
+    margin: 0;
+    a {
+      font-size: 0.8rem;
+      color: $dark-gray;
+      padding: 0.7rem 0rem;
+    }
+  }
+}
+@media screen and (min-width: 40em) {
+  .custom-select {
+    max-width: 250px;
+  }
+}
+.custom-select {
+  position: relative;
+  select {
+    &:hover {
+      cursor: pointer;
+    }
+    position: absolute;
+    z-index: 1;
+    padding-left: 1rem;
+    border: 1px solid $medium-gray;
+    border-radius: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: radio-container;
+    appearance: none;
+    background: transparent;
+    color: $dark-gray;
+    font-size: 0.75rem;
+    padding: 0 1rem;
+    padding-top: 1rem;
+  }
+  span {
+    font-weight: 700;
+    position: absolute;
+    left: 1rem;
+    font-size: 0.75rem;
+    top: 0.2rem;
+    z-index: 0;
+  }
+  i {
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    font-size: 1.5rem;
+    z-index: 0;
+  }
+}
+.tabs {
+  background-color: lighten($light-gray, 5%);
+  .tabs-title > a {
+    -webkit-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
+  .tabs-title > a:focus,
+  .tabs-title > a[aria-selected="true"] {
+    background-color: #fff;
+    h6,
+    i {
+      color: $primary-color;
+    }
+  }
+  i {
+    font-size: 2rem;
+    color: $dark-gray;
+  }
+  h6 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0;
+    color: $dark-gray;
+  }
+  p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: $dark-gray;
+  }
+}
+.tabs-panel {
+  &.is-active {
+    @include mui-animation(fade);
+    animation-duration: 700ms;
+  }
+}
+.accordion-slider-nav {
+  text-align: right;
+  margin: 1rem;
+  a {
+    background-color: transparent;
+    margin: 0 0.5rem;
+    font-weight: 600;
+    color: $dark-gray;
+    font-size: 70%;
+    text-transform: uppercase;
+  }
+}
+.text-content {
+  font-size: 80%;
+  h5 {
+    font-size: 95%;
+  }
+}
+.reveal-overlay {
+  background-color: rgba(14, 14, 14, 0.95);
+  border: 0;
+}
+.reveal {
+  border: 0;
+  &#new-message{
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+}
+  &.img-popup {
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+.callout {
+  border: 0;
+  border-radius: 4px;
+  h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 80%;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+table {
+  margin: 2rem 0;
+  .thumbnail-img img {
+    margin: 0 auto;
+  }
+  h6 a {
+    font-weight: 700;
+  }
+  .button {
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 60%;
+    color: $dark-gray;
+  }
+  h6 {
+    font-weight: 600;
+  }
+  small.old-price {
+    color: $dark-gray;
+  }
+  thead th {
+    text-transform: uppercase;
+    font-size: 70%;
+  }
+}
+.badge {
+  border-radius: 4px;
+}
+.clearfix {
+  clear: both;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+blockquote {
+  cite {
+    margin-top: 1rem;
+    bold {
+      font-weight: 600;
+    }
+  }
+}
+@media screen and (max-width: 40em) {
+  .medium-expanded {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@include themify($themes) {
+  a:hover {
+    color: themed("primary");
+  }
+  .discount {
+    background-color: themed("primary");
+  }
+  .button.cast:not(.hollow) {
+    background-color: themed("primary");
+    i {
+      background-color: darken(themed("primary"), 10%);
+    }
+  }
+  .button.cast-two:not(.hollow) {
+    background-color: themed("primary");
+    i {
+      background-color: darken(themed("primary"), 10%);
+    }
+  }
+  .slider-fill {
+    background-color: themed("primary");
+  }
+  .slider-handle {
+    background-color: themed("primary");
+    &:hover {
+      background-color: lighten(themed("primary"), 10%);
+    }
+  }
+  .accordion-slider-nav a:hover {
+    color: themed("primary");
+  }
+}

@@ -1,0 +1,270 @@
+.login-call {
+  border-radius: $theme-radius;
+  padding: 1rem;
+  padding-bottom: .5rem;
+
+  .cell.medium-auto {
+    text-align: start;
+  }
+
+  .align-middle {
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  i.icon-lock {
+    font-size: 3rem;
+  }
+
+  h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-size: .85rem;
+  }
+
+  h5 {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: .85rem;
+    color: $dark-gray;
+  }
+
+  a.button {
+    margin: 0;
+    color: #0a0a0a !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0;
+    text-align: left;
+    width: auto;
+    background-color: transparent !important;
+
+    &:hover {
+      color: #0a0a0a !important
+    }
+
+    &.closed {
+      i {
+        transition: all .5s;
+        transform: rotate(180deg);
+      }
+    }
+
+    &.open {
+      i {
+        transition: all .5s;
+        transform: rotate(0deg);
+      }
+    }
+
+    i.icon-arrow_downward {
+      font-size: 2rem;
+      background: transparent !important;
+      color: #0a0a0a !important;
+      vertical-align: middle;
+      right: -1rem;
+      top: -1rem;
+    }
+  }
+
+  .convidado {
+    a {
+      margin-top: 1.5rem;
+      color: $white !important;
+      background-color: $black !important;
+      padding: .75rem;
+      width: 100%;
+      text-align: center;
+      border-radius: .5rem;
+      border: 1px solid $black;
+
+      &:hover {
+        color: $white !important;
+        background-color: lighten($color: $black, $amount: 30%) !important;
+      }
+    }
+  }
+}
+
+.new-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 2rem;
+  flex: 1 1;
+
+  .nova-conta,
+  .login-conta {
+    width: calc(50% - .5rem);
+    padding-left: 1rem;
+    border-left: 1px solid rgba(211, 211, 211, 0.445);
+    display: flex;
+    flex-direction: column;
+
+    ul.fade-out-vertical {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      display: none;
+    }
+
+    ul.fade-out-vertical {
+      visibility: visible;
+      opacity: 1;
+      display: block
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      position: relative;
+      text-align: start;
+      font-weight: bold;
+
+      i {
+        margin-right: 1rem;
+        left: 0;
+        font-size: 2rem;
+      }
+    }
+
+    #login-form {
+      margin-top: 4.5rem;
+      margin-bottom: 1.5rem;
+      .pass-container{
+        position: relative;
+        label{
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          #check-2{
+            display: none;
+            position: absolute;
+            right: 0;
+          }
+          #check-2 + .icon-eye-blocked,
+          #check-2 + .icon-eye {
+         font-size:1rem;
+         transition: .5s;
+      
+          }
+        }
+      }
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      border-right: 0;
+    }
+  }
+
+  .nova-conta {
+    border-left: 0;
+
+    #create-button {
+      margin-top: .6rem;
+
+      button {
+        background-color: rgb(90, 90, 90);
+      }
+    }
+  }
+
+  button {
+    padding: .8rem;
+  }
+
+  form {
+    .dados-sessao {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      div {
+        display: flex;
+        align-items: center;
+
+        &.manter-dados-sessao {
+          input {
+            margin: 0;
+          }
+
+          label {
+            margin: 0 .2rem;
+            font-size: .75rem;
+          }
+        }
+
+        &.recuperar-password {
+          display: block;
+          text-align: end;
+
+          a {
+            text-decoration: underline;
+            font-size: .75rem;
+          }
+        }
+      }
+    }
+
+    .enter {
+      background-color: #ff5757;
+    }
+
+    #gSignInWrapper {
+      width: 100%;
+      text-align: center;
+      padding: .1rem;
+      border: 1px solid lightgray;
+      border-bottom: 2px solid lightgray;
+      cursor: pointer;
+      border-radius: .5rem;
+
+      span.icon {
+        background: url('../img/google.png') transparent 5px 50% no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+      }
+
+      span.buttonText {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+  }
+
+  .custom-select {
+    label {
+
+      span,
+      i {
+        z-index: -1;
+      }
+
+      select {
+        position: relative;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new-form {
+    flex-direction: column;
+  }
+}

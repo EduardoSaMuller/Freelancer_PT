@@ -1,0 +1,22 @@
+section{
+  .home-slider.slick-slider.text-nav{
+   .slick-prev, .slick-next{
+    border-radius: 2px;
+    padding: .35rem;
+    &:before{
+    color:$white;
+    }
+    background-color: $identity-color;
+    }
+  }
+}
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  .home-slider.slick-slider.text-nav{
+   .slick-prev, .slick-next{
+    background-color:themed('primary');
+    }
+  }
+}

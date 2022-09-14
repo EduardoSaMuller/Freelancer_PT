@@ -1,0 +1,62 @@
+<div class="main-nav">
+  <div class="grid-x">
+    <div class="cell shrink">
+      <button aria-label="Open Menu Lateral" class="button clear lateral-menu " type="button" data-toggle="lateralMenu">
+        <i class="icon-menu"></i>
+      </button>
+    </div>
+    <div class="cell  auto large-shrink">
+      <a class="logo button clear" href="home.html">
+        <i class=" {{gracehome-class}} {{graca-class}} {{graca-fr-class}} {{minna-class}}"></i>
+        </i>
+      </a>
+    </div>
+    <div class="cell auto show-for-large">
+      <div class="grid-x">
+        <div class="cell shrink">
+          
+        </div>
+        <div class="cell shrink">
+          
+        </div>
+        <div class="cell auto show-for-xlarge">
+        </div>
+        <div class="cell shrink float-right">
+          <ul class="secondary-nav menu horizontal">
+            {{#each navigation.secondary}}
+            <li>
+              <a href="{{link}}.html">{{name}}</a>
+            </li>
+            {{/each}}
+            <li>
+              <a data-open="loginReveal">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cell shrink hide-for-large">
+      <a href="#" aria-label="login" data-open="loginReveal" class="button clear">
+        <i class="icon-person"></i>
+      </a>
+    </div>
+    <div class="cell shrink show-for-medium">
+      <a class="button clear" data-tooltip title="Messenger" href="#">
+        <i class="icon-h-messenger"></i>
+      </a>
+    </div>
+    <div class="cell shrink show-for-medium">
+      <a class="button clear" data-tooltip title="Whatsapp" href="#">
+        <i class="icon-h-whatsapp"></i>
+      </a>
+    </div>
+    <div class="cell shrink">
+      <button aria-label="Open Menu" class="button clear" type="button" data-toggle="offCanvasCart">
+        <i class="icon-cart"></i>
+        <span class="cart-counter">2</span>
+      </button>
+    </div>
+  </div>
+  
+</div>
+

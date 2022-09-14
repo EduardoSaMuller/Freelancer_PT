@@ -1,0 +1,15 @@
+<section class="recomended-products">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x text-center">
+      <div class="cell section-header">
+        <h6>CRIAMOS O ESPAÇO DOS SEUS SONHOS</h6>
+        <h3><span>Produtos em destaque</span></h3>
+      </div>
+    </div>
+  </div>
+    <div class="recomended-products-slider">
+      {{#each store.recomended}}
+        {{> product-thumbnail}}
+      {{/each}}
+    </div>
+</section>

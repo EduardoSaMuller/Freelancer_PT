@@ -1,0 +1,25 @@
+section.subscribe-newsletter{
+  padding-bottom:2rem;
+  h3{
+    font-family: 'questa-grande-regular-webfont';
+    font-size:3rem;
+  }
+  input[type="text"]{
+  margin-bottom: .25rem;
+  }
+  label{
+    font-size: 0.7rem;
+  }
+  @media  screen and (max-width:90rem) {
+    h3{
+      font-size: 2rem;
+    }
+    
+  }
+  @media  screen and (max-width:40rem) {
+    h3{
+      font-size: 1.5rem;
+    }
+    
+  }
+}

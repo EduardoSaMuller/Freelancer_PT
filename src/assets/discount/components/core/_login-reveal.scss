@@ -1,0 +1,86 @@
+div#loginReveal{
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(14,14,14,0.25);
+  -moz-box-shadow: 0px 1px 0px 0px rgba(14,14,14,0.25);
+  box-shadow: 0px 1px 0px 0px rgba(14,14,14,0.25);
+  top: 0!important;
+  left: 0;
+  width: 100%;
+  max-width: none;
+
+  .header{
+    border-bottom:1px solid $medium-gray;
+    margin-bottom:1rem;
+    padding-bottom:1rem;
+    i{
+      font-size:4rem;
+      //color:$identity-color;
+    }
+  }
+  div.medium-1{
+    text-align: center;
+    i{
+
+      color:$medium-gray;
+      font-size:2rem;
+    }
+  }
+
+  h4{
+    font-family: 'questa-grande-regular-webfont';
+
+  }
+  p{
+    color:$dark-gray;
+  }
+  ul {
+    margin-bottom:1rem;
+    &.fade-out-vertical{
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      display: none;
+     }
+     &.fade-out-vertical{
+      visibility: visible;
+      opacity: 1;
+      display:block
+    }
+    li {
+      font-size:80%;
+      i{
+        //color:$identity-color;
+        margin-right: .5rem;
+      }
+    }
+  }
+  .recover-button{
+    widh:100%;
+    display: block;
+    text-align: right;
+    font-size:.65rem;
+    margin-bottom: 1rem;
+  }
+  label{
+    font-size:.65rem;
+  }
+}
+.reveal-overlay.transparent{
+  background: transparent;
+}
+@media screen and (min-width: 40em) {
+  div#loginReveal{
+    &.reveal.full{
+      height:auto;
+      min-height:auto
+    }
+  }
+}
+
+
+@import 'themes-config.scss';
+
+@include themify($themes) {
+  div#loginReveal .header i{
+    color:themed('primary');
+  }
+}

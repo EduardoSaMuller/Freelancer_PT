@@ -1,0 +1,60 @@
+<button class="close-button" aria-label="Close menu" type="button" data-close>
+  <i class="icon-close"></i>
+</button>
+<h6><a href="carrinho.html"> <i class="icon-cart"></i> CARRINHO DE COMPRAS (2)</a></h6>
+<div class="cart-wrp">
+  <!--
+  <div class="cart-item-actions grid-x">
+    <div class="cell small-4">
+      <a href="#">
+        <i class="icon-heart-cart"></i>
+      </a>
+    </div>
+    <div class="cell small-4">
+      <a href="#">
+        <i class="icon-trash-cart"></i>
+      </a>
+    </div>
+    <div class="cell small-4">
+      <a href="#">
+        <i class="icon-cross-cart"></i>
+      </a>
+    </div>
+  </div>
+  -->
+  <!-- Se existirem cart-items mostra  -->
+  {{#each store.cart}}
+  {{> cart-item}}
+  {{/each}}
+  <!-- Se não existirem cart-items mostra isto
+  <div class="cart-empty grid-x grid-padding-x align-middle">
+  <div class="cell auto text-center">
+  <h5>O carrinho está vazio.</h5>
+</div>
+</div>
+-->
+<div class="cart-total">
+  <!-- Se existirem poupança mostra  -->
+  <div class="grid-x savings-wrp">
+    <div class="cell shrink">
+      <span class="savings-label">Poupança Total</span>
+    </div>
+    <div class="cell shrink">
+      <span class="savings">430,00 €</span>
+    </div>
+  </div>
+  <!-- fim  -->
+  <div class="total-wrp">
+    <div class="grid-x">
+      <div class="cell shrink">
+        <span class="total-label">Total</span>
+      </div>
+      <div class="cell auto">
+        <span class="total">6.174,00 €</span>
+      </div>
+    </div>
+    <div class="grid-x align-right">
+      <a href="carrinho.html" type="submit" class="button cast rounded small">Processar Encomenda<i class="icon-arrow_forward"></i></a>
+    </div>
+  </div>
+</div>
